@@ -5,7 +5,7 @@ extract_labdoc_text_init:
   deps: []
   outs:
     - path: tmp/labdocs_texts_init.json.gz
-      md5: 09780df68dce030e19cdca7fd86ac72e
+      md5: 7ce572618ff0f6f69a533016651bf5d6
   spacy_version: 3.3.1
   spacy_git_version: 5fb597f77
 extract_labdoc_text:
@@ -15,7 +15,54 @@ extract_labdoc_text:
   deps: []
   outs:
     - path: tmp/missions_texts/
-      md5: b7ce1b4cbdc34f7f280c4283550dfeae
+      md5: 83b6c9d35fa6efd31aeba0c920024c70
   spacy_version: 3.3.1
   spacy_git_version: 5fb597f77
-
+contrib_and_segmentation:
+  cmd: python -m spacy run contrib_and_segmentation
+  script:
+    - python3 scripts/contrib_and_segmentation.py
+  deps:
+    - path: tmp/missions_texts/
+      md5: 83b6c9d35fa6efd31aeba0c920024c70
+  outs:
+    - path: /tmp/missions_contribs/
+      md5: null
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+collaboration:
+  cmd: python -m spacy run collaboration
+  script:
+    - python3 scripts/collaboration.py
+  deps:
+    - path: tmp/missions_texts/
+      md5: 83b6c9d35fa6efd31aeba0c920024c70
+  outs:
+    - path: tmp/collab.json.gz
+      md5: d26d5cbedb219303c59b23bb5efdb615
+    - path: tmp/collab.csv
+      md5: null
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+report:
+  cmd: python -m spacy run report
+  script:
+    - python3 scripts/summary.py tmp/collab.json.gz
+  deps:
+    - path: tmp/collab.json.gz
+      md5: d26d5cbedb219303c59b23bb5efdb615
+  outs:
+    - path: tmp/summary.csv
+      md5: 162c09d00470ac21f79f26bdac728ba5
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+readme:
+  cmd: python -m spacy run readme
+  script:
+    - python -m spacy project document --output README.md
+  deps: []
+  outs:
+    - path: README.md
+      md5: 6fc5e130902d24298ff3b591e069604c
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77

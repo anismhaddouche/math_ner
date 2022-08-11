@@ -4,9 +4,9 @@
 import mysql.connector as mariadb
 import json
 import gzip
-from pathlib import Path
+# from pathlib import Path
 import typer
-import tqdm
+# import tqdm
 
 
 def extract_text_init(user: str, password: str, host: str, database: str):

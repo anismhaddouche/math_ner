@@ -1,13 +1,10 @@
 # To run this script : navigate to the 'indicators' folder and run the following command :
 # streamlit  run scripts/visualize_labdoc.py
-# Please see the end of this file in order to gives an example of how to use it.
-
-
 
 
 import sys,os
 import spacy
-import typer 
+# import typer 
 sys.path.append((os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 + '/model/fr_LabnbookNer-0.0.0'))
 from components import *
@@ -27,11 +24,10 @@ import pandas as pd
 import warnings
 
 warnings.filterwarnings("ignore")
-from IPython.core.display import display, HTML
+# from IPython.core.display import display, HTML
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-
 
 def get_labdoc_text(id_mission: int, id_report: int, id_labdoc: int):
     with gzip.open(
@@ -67,15 +63,11 @@ def get_labdoc_contribs_segment(id_mission: int, id_report: int, id_labdoc: int)
 
 #-----------------------------------------------------------------------------------------------------------------------
 
-def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int):
-    nlp = spacy.load(
-        "/Users/anis/test_labnbook/math_ner/indicators/model/fr_LabnbookNer-0.0.0"
-    )
+def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int, nlp =nlp ):
+  
 
     labdoc_texts = get_labdoc_text(id_mission, id_report, id_labdoc)
-
     labdoc_contrib = get_labdoc_contribs(id_mission, id_report, id_labdoc)
-
     labdoc_results, traces = get_labdoc_contribs_segment(
         id_mission, id_report, id_labdoc
     )
@@ -147,12 +139,12 @@ def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int):
                 f"n_users: {n_users} | nb_tokens: {nb_tokens} | eqc_index: {eqc_index} | coec_index: {coec_index} | nb_sentences: {len(segments)} "
             )
     matrix = np.array(collab_matrix_segments)
-    if st.button("Get a summary", key="summary"):
-        if np.shape(matrix)[0] > 1:
-            st.text("Contribution matrix for sentences:")
+    # if st.button("Get a summary", key="summary"):
+    if np.shape(matrix)[0] > 1:
+        st.text("Contribution matrix for sentences:")
             # st.text(f"id_labdoc : {id_labdoc}, id_report : {id_report}, id_mission : {id_mission}, id_trace : {trace} :{collab_matrix_segments}")
-            fig = plt.figure(figsize=(10, 4))
-            sns.heatmap(
+        fig = plt.figure(figsize=(10, 4))
+        sns.heatmap(
                 matrix,
                 cmap="RdYlGn",
                 annot=True,
@@ -160,16 +152,16 @@ def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int):
                 cbar_kws={"orientation": "horizontal"},
             )
             # change the size of st.write
-            st.pyplot(fig)
-            st.text(
+        st.pyplot(fig)
+        st.text(
                 f"n_users: {n_users} | nb_tokens: {nb_tokens} | eqc_index: {eqc_index} | coec_index: {coec_index} | nb_sentences: {len(segments)} "
             )
 
-            fuzzified = pd.read_csv("tmp/summary_fuzzy.csv", index_col=0)
-            fuzzified_mission = fuzzified[fuzzified["id_mission"] == id_mission]
+        fuzzified = pd.read_csv("tmp/summary_fuzzy.csv", index_col=0)
+        fuzzified_mission = fuzzified[fuzzified["id_mission"] == id_mission]
 
-            fig = plt.figure(figsize=(10, 4))
-            sns.scatterplot(
+        fig = plt.figure(figsize=(10, 4))
+        sns.scatterplot(
                 data=fuzzified_mission,
                 x="eqc",
                 y="eqc_degree",
@@ -177,11 +169,11 @@ def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int):
                 marker=".",
             )
             # change the size of st.write
-            st.pyplot(fig)
+        st.pyplot(fig)
 
-        fig = plt.figure(figsize=(10, 4))
+    fig = plt.figure(figsize=(10, 4))
         # fig.set_size_inches(30, 10)
-        sns.scatterplot(
+    sns.scatterplot(
             data=fuzzified_mission,
             x="coec",
             y="coec_degree",
@@ -189,8 +181,8 @@ def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int):
             marker=".",
         )
         # change the size of st.write
-        st.pyplot(fig)
-        st.text(
+    st.pyplot(fig)
+    st.text(
             f" \
                 eqc membership: {fuzzified_mission[fuzzified_mission['id_labdoc'] == id_labdoc]['eqc_membership']} \n \
                 eqc degree : {fuzzified_mission[fuzzified_mission['id_labdoc'] == id_labdoc]['eqc_degree']} \n \
@@ -200,13 +192,33 @@ def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int):
 
 #===============================================================================
 
+def random_labdoc():
+    id_mission =  st.text_input("id_mission")
+    id_report = st.text_input("id_report")
+    id_labdoc = st.text_input("id_labdoc")
+    st.text(f"id_labdoc : {id_labdoc}, id_report : {id_report}, id_mission : {id_mission}")
+    if st.button('Generate a random labdoc'):
+        data = pd.read_csv('/Users/anis/test_labnbook/math_ner/indicators/tmp/summary.csv')[['id_mission', 'id_report','id_labdoc']]
+        random_row = data.sample(n=1)
+        id_mission, id_report, id_labdoc = random_row['id_mission'].values[0], random_row['id_report'].values[0], random_row['id_labdoc'].values[0]
+        st.text(f"id_labdoc: {id_labdoc}, id_report: {id_report}, id_mission: {id_mission}")
 
+        
+       
+    try : 
+        visualize_labdoc(id_mission, id_report, id_labdoc, nlp = nlp)
+    #print the exception error     
+    except :
+        st.text("Error : id_labdoc not found")
+        pass
 
-try:
-    # visualize_labdoc(1038, 24870, 247575 )
-    visualize_labdoc(1694,	47242,	471651)
-    # visualize_labdoc(429, 43158, 435623)
-    # visualize_labdoc(1544, 43471, 424607)
-except SystemExit as se:
-    if se.code != 0:
-        raise
+random_labdoc()
+
+# try:
+#     # visualize_labdoc(1038, 24870, 247575 )
+#     visualize_labdoc(1694,	47242,	471527)
+#     # visualize_labdoc(429, 43158, 435623)
+#     # visualize_labdoc(1544, 43471, 424607)
+# except SystemExit as se:
+#     if se.code != 0:
+#         raise

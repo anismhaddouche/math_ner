@@ -16,7 +16,7 @@ Commands are only re-run if their inputs have changed.
 
 | Command | Description |
 | --- | --- |
-| `extract_labdoc_text_init` | Get the id of text labdocs as well as the initial texts (with html tags) written by teachers. |
+| `extract_labdoc_text_init` | Get the id of text labdocs as well as the initial texts (with html tags) written by teachers. These step need an access to the local database  LabNbook |
 | `extract_labdoc_text` | Extracts the text of each version of labdoc by removing the html tags and clean texts according to regex patterns. |
 | `contrib_and_segmentation` |  |
 | `collaboration` |  |
@@ -33,6 +33,6 @@ inputs have changed.
 | Workflow | Steps |
 | --- | --- |
 | `extract_labdoc_text_versions` | `extract_labdoc_text_init` &rarr; `extract_labdoc_text` |
-| `compute_contributions_matrices` | `readme` |
+| `compute_contributions_matrices` | `contrib_and_segmentation` &rarr; `collaboration` &rarr; `report` &rarr; `readme` |
 
 <!-- SPACY PROJECT: AUTO-GENERATED DOCS END (do not remove) -->

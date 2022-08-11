@@ -7,7 +7,7 @@
 import json
 import gzip
 import os
-import csv
+# import csv
 import typer 
 import numpy as np
 import tqdm as tqdm 
@@ -104,8 +104,8 @@ def compute_collab_matrix_segments(collab_matrix,segments):
 
 def compute_indicators(collab_matrix,users,meta,id_mission,id_report,id_labdoc,id_trace,debug=False) :
     segments = meta['SEGS']
-    nb_segments = meta['NB_SEGS']
-    nb_tokens = meta['NB_TOKS']
+    #nb_segments = meta['NB_SEGS']
+    #nb_tokens = meta['NB_TOKS']
     collab_matrix_segments = compute_collab_matrix_segments(collab_matrix,segments)
     if debug == True :   
         if np.mean(np.sum(collab_matrix_segments,axis = 0)) != 1:
@@ -125,22 +125,22 @@ def compute_indicators(collab_matrix,users,meta,id_mission,id_report,id_labdoc,i
 
 # ----------------------------------------------------------------------------------------------------------------------
 
-def json2csv():
-    with open('tmp/collab.csv', 'w', newline='') as outcsv:
-        writer = csv.writer(outcsv)
-        writer.writerow(["id_mission", "id_report", "id_labdoc", "id_trace", "n_users","teacher" ,"eqc_index","coec_index","collab_matrix_segments","meta"])
+# def json2csv():
+#     with open('tmp/collab.csv', 'w', newline='') as outcsv:
+#         writer = csv.writer(outcsv)
+#         writer.writerow(["id_mission", "id_report", "id_labdoc", "id_trace", "n_users","teacher" ,"eqc_index","coec_index","collab_matrix_segments","meta"])
 
-        with gzip.open('tmp/collab.json.gz', 'rt', encoding='utf-8') as zipfile:
-            if zipfile:
-                data = json.load(zipfile)
-                for id_mission in data:
-                    for id_report in data[id_mission]:
-                        for id_labdoc in data[id_mission][id_report]:
-                            for id_trace in data[id_mission][id_report][id_labdoc]:
-                                n_users, teacher ,eqc_index, coec_index, collab_matrix_segments, meta = data[id_mission][id_report][id_labdoc][id_trace]
-                                writer.writerow([id_mission, id_report, id_labdoc, id_trace, n_users, teacher ,eqc_index, coec_index, collab_matrix_segments,meta])
+#         with gzip.open('tmp/collab.json.gz', 'rt', encoding='utf-8') as zipfile:
+#             if zipfile:
+#                 data = json.load(zipfile)
+#                 for id_mission in data:
+#                     for id_report in data[id_mission]:
+#                         for id_labdoc in data[id_mission][id_report]:
+#                             for id_trace in data[id_mission][id_report][id_labdoc]:
+#                                 n_users, teacher ,eqc_index, coec_index, collab_matrix_segments, meta = data[id_mission][id_report][id_labdoc][id_trace]
+#                                 writer.writerow([id_mission, id_report, id_labdoc, id_trace, n_users, teacher ,eqc_index, coec_index, collab_matrix_segments,meta])
 
-# ----------------------------------------------------------------------------------------------------------------------
+# # ----------------------------------------------------------------------------------------------------------------------
 #TODO ; rajouter un variable bool qui dit si l'ens est présente ou pas dans users
 def collaboration(debug = False) :
     typer.secho(f"-- Execution of the collaboration indicator calculation algorithm",fg = typer.colors.GREEN)

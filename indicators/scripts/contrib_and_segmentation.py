@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-@authors: Anne, Karim, Guillaume, Sébastien
+@authors: Anne, Karim, Guillaume, Sébastien, Anis
 """
 
 import json
 import gzip
-import pysbd
+# import pysbd
 from pathlib import Path
 from lib import diff
 import typer

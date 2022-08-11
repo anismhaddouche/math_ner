@@ -18,7 +18,7 @@ vars :
 
  # ============================================ directories ===========================================================================
 
-directories : ["model","scripts","versioning","configs"]
+directories : ["model","scripts","versioning","configs","tmp"]
 model:
   - dest: "model/fr_LabnbookNer-0.0.0"
     description: "The 'fr_LabNbookNer-VERSION' folder and the 'components.py' file that contains a specific SpaCy components. Theses files are a copy if the correct_ner subproject."
@@ -26,8 +26,8 @@ scripts:
   - dest: "scripts/*.py"
     description: "Contain all the scripts used to compute the indicators"
 configs:
-  - dest: "configs/config.cfg"
-    description: "The config file of the model 'fr_LabnbookNer-0.0.0'  needed to use it"
+  - dest: "configs/*.json"
+    description: "Contain a regex patterns"
 versioning:
   - dest: "versioning/*.json"
     description: "The versioning files of each labdoc"

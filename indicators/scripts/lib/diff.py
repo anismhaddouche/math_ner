@@ -11,12 +11,6 @@ import difflib
 import spacy
 import typer
 
-# import sys
-# sys.path.append('/Users/anis/test_labnbook/math_ner/indicators/model/fr_LabnbookNer-0.0.0')
-# from components import *
-# nlp = spacy.load("/Users/anis/test_labnbook/math_ner/indicators/model/fr_LabnbookNer-0.0.0")
-
-
 def get_users(chain):
     # Retourne la la liste des utilisateurs d'une chaine
     users_contrib = chain[1]

@@ -1,10 +1,10 @@
 from pathlib import Path
 import json
-import csv
+# import csv
 import pandas as pd
 import skfuzzy as fuzz
 import numpy as np
-from skfuzzy import control as ctrl
+# from skfuzzy import control as ctrl
 import gzip
 import warnings
 import typer
