@@ -2,3 +2,4 @@
 *.ipynb
 test.py
 .DS_Store
+.vscode
