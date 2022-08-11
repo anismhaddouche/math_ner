@@ -1,3 +1,4 @@
 /indicators/versioning/
 *.ipynb
 test.py
+.DS_Store
