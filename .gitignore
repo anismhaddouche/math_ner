@@ -1,1 +1,4 @@
-/indicators/versioning/*
+/indicators/versioning/
+/test/*
+test.ipynb
+test.py
