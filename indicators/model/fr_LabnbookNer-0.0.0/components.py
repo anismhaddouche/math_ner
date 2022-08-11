@@ -9,6 +9,7 @@ import typer
 import srsly
 import re 
 import pysbd
+import sys, os 
 from pysbd.utils import PySBDFactory
 
 @Language.component("Find_LatexTable")

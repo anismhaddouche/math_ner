@@ -6,13 +6,13 @@ vars :
     password : 11950022
     host : "localhost"
     database : "Labnbook"
-  regex :
-    regex_text : "configs/regex_text.json"
+  regex_text : "configs/regex_text.json"
   result : "collab.json.gz"
-  visualization :
-    id_labdoc : 288282
-    id_report : 31489
-    id_mission : 1044
+
+  # visualization :
+  #   id_labdoc : 288282
+  #   id_report : 31489
+  #   id_mission : 1044
 
 
 
@@ -48,7 +48,7 @@ workflows :
 
 commands : 
     - name: "extract_labdoc_text_init"
-      help: "Get the id of text labdocs as well as the initial texts (with html tags) written by teachers."
+      help: "Get the id of text labdocs as well as the initial texts (with html tags) written by teachers. These step need an access to the local database  LabNbook"
       script:
         - "python3 scripts/extract_labdoc_text_init.py ${vars.db.user} ${vars.db.password} ${vars.db.host} ${vars.db.database}"
       outputs:
@@ -57,7 +57,7 @@ commands :
     - name: "extract_labdoc_text"
       help: "Extracts the text of each version of labdoc by removing the html tags and clean texts according to regex patterns."
       script:
-        - "python3 scripts/extract_labdoc_text.py ${vars.regex.regex_text}"
+        - "python3 scripts/extract_labdoc_text.py ${vars.regex_text}"
       outputs:
         - "tmp/missions_texts/"
 ##  ----------------------------------------------------------------------------------------------------------------------

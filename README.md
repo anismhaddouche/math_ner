@@ -6,5 +6,5 @@ This project is decomposed in following three subprojects.
 * correct_ner: the aim here is to correct the model created in the train_ner subprojet by annotating or correcting the train and dev manually with [Prodigy](https://prodi.gy).
 * indicators: in this subproject we use the output trained ner model of the subproject correct_ner to create the indicators introduced above. 
 
-For more details, please refer to the README.md of each subproject.
+For more details, please refer to the README.md of each subproject. Note that, the subproject 'indicators' contains all materials needed to compute the above indicators.
 

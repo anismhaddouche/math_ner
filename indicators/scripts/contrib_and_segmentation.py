@@ -6,24 +6,21 @@
 
 import json
 import gzip
-import os
 import pysbd
 from pathlib import Path
 from lib import diff
 import typer
 import tqdm as tqdm
+import sys, os 
 
-import sys
-
-sys.path.append(
-    "/Users/anis/test_labnbook/math_ner/indicators/model/fr_LabnbookNer-0.0.0"
-)
+sys.path.append((os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
++ '/model/fr_LabnbookNer-0.0.0'))
 from components import *
 
-nlp = spacy.load(
-    "/Users/anis/test_labnbook/math_ner/indicators/model/fr_LabnbookNer-0.0.0"
-)
-#     return output
+nlp = spacy.load("model/fr_LabnbookNer-0.0.0")
+
+
+
 def get_meta(doc):
     """
     Get the position of entities and punctuation token's mark
