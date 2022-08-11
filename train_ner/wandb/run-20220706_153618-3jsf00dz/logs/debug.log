@@ -1,0 +1,257 @@
+2022-07-06 15:36:18,174 INFO    MainThread:41900 [wandb_setup.py:_flush():76] Loading settings from /var/root/.config/wandb/settings
+2022-07-06 15:36:18,174 INFO    MainThread:41900 [wandb_setup.py:_flush():76] Loading settings from /Users/anis/test_labnbook/math_ner/train_ner/wandb/settings
+2022-07-06 15:36:18,174 INFO    MainThread:41900 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-07-06 15:36:18,175 WARNING MainThread:41900 [wandb_setup.py:_flush():76] Could not find program at -m spacy.__main__
+2022-07-06 15:36:18,175 INFO    MainThread:41900 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m spacy.__main__'}
+2022-07-06 15:36:18,175 INFO    MainThread:41900 [wandb_init.py:_log_setup():428] Logging user logs to /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_153618-3jsf00dz/logs/debug.log
+2022-07-06 15:36:18,175 INFO    MainThread:41900 [wandb_init.py:_log_setup():429] Logging internal logs to /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_153618-3jsf00dz/logs/debug-internal.log
+2022-07-06 15:36:18,175 INFO    MainThread:41900 [wandb_init.py:init():462] calling init triggers
+2022-07-06 15:36:18,175 INFO    MainThread:41900 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {'components': {'ner': {'factory': 'ner', 'incorrect_spans_key': None, 'moves': None, 'scorer': {'@scorers': 'spacy.ner_scorer.v1'}, 'update_with_oracle_cut_size': 100, 'model': {'@architectures': 'spacy.TransitionBasedParser.v2', 'state_type': 'ner', 'extra_state_tokens': False, 'hidden_width': 64, 'maxout_pieces': 2, 'use_upper': True, 'no': None, 'tok2vec': {'@architectures': 'spacy.Tok2VecListener.v1', 'width': 96, 'upstream': '*'}}}, 'parser': {'factory': 'parser', 'learn_tokens': False, 'min_action_freq': 30, 'moves': None, 'scorer': {'@scorers': 'spacy.parser_scorer.v1'}, 'update_with_oracle_cut_size': 100, 'model': {'@architectures': 'spacy.TransitionBasedParser.v2', 'state_type': 'parser', 'extra_state_tokens': False, 'hidden_width': 128, 'maxout_pieces': 3, 'use_upper': True, 'no': None, 'tok2vec': {'@architectures': 'spacy.Tok2VecListener.v1', 'width': 96, 'upstream': '*'}}}, 'tok2vec': {'factory': 'tok2vec', 'model': {'@architectures': 'spacy.Tok2Vec.v2', 'embed': {'@architectures': 'spacy.MultiHashEmbed.v2', 'width': 96, 'attrs': ['ORTH', 'SHAPE'], 'rows': [5000, 2500], 'include_static_vectors': False}, 'encode': {'@architectures': 'spacy.MaxoutWindowEncoder.v2', 'width': 96, 'depth': 4, 'window_size': 1, 'maxout_pieces': 3}}}}, 'corpora': {'dev': {'@readers': 'spacy.Corpus.v1', 'max_length': 0, 'gold_preproc': False, 'limit': 0, 'augmenter': None}, 'train': {'@readers': 'spacy.Corpus.v1', 'max_length': 0, 'gold_preproc': False, 'limit': 0, 'augmenter': None}}, 'initialize': {'vectors': None, 'init_tok2vec': None, 'vocab_data': None, 'lookups': None, 'before_init': None, 'after_init': None}, 'nlp': {'lang': 'fr', 'pipeline': ['tok2vec', 'ner', 'parser'], 'batch_size': 1000, 'disabled': [], 'before_creation': None, 'after_creation': None, 'after_pipeline_creation': None, 'tokenizer': {'@tokenizers': 'spacy.Tokenizer.v1'}}, 'paths': {'vectors': None, 'init_tok2vec': None}, 'system': {'gpu_allocator': None, 'seed': 0}, 'training': {'dev_corpus': 'corpora.dev', 'train_corpus': 'corpora.train', 'seed': 0, 'gpu_allocator': None, 'dropout': 0.1, 'accumulate_gradient': 1, 'patience': 1600, 'max_epochs': 0, 'max_steps': 20000, 'eval_frequency': 200, 'frozen_components': [], 'annotating_components': [], 'before_to_disk': None, 'batcher': {'@batchers': 'spacy.batch_by_words.v1', 'discard_oversize': False, 'tolerance': 0.2, 'get_length': None, 'size': {'@schedules': 'compounding.v1', 'start': 100, 'stop': 1000, 'compound': 1.001, 't': 0.0}}, 'logger': {'@loggers': 'spacy.WandbLogger.v4', 'project_name': 'ner_train_v1', 'remove_config_values': ['paths.train', 'paths.dev', 'corpora.train.path', 'corpora.dev.path'], 'log_dataset_dir': 'corpus', 'model_log_interval': 1000, 'entity': None, 'run_name': None, 'log_best_dir': None, 'log_latest_dir': None}, 'optimizer': {'@optimizers': 'Adam.v1', 'beta1': 0.9, 'beta2': 0.999, 'l2_is_weight_decay': True, 'l2': 0.01, 'grad_clip': 1.0, 'use_averages': False, 'eps': 1e-08, 'learn_rate': 0.001}, 'score_weights': {'ents_f': 0.5, 'ents_p': 0.0, 'ents_r': 0.0, 'ents_per_type': None, 'dep_uas': 0.25, 'dep_las': 0.25, 'dep_las_per_type': None, 'sents_p': None, 'sents_r': None, 'sents_f': 0.0}}}
+2022-07-06 15:36:18,175 INFO    MainThread:41900 [wandb_init.py:init():515] starting backend
+2022-07-06 15:36:18,175 INFO    MainThread:41900 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-07-06 15:36:18,184 INFO    MainThread:41900 [backend.py:ensure_launched():217] starting backend process...
+2022-07-06 15:36:18,190 INFO    MainThread:41900 [backend.py:ensure_launched():222] started backend process with pid: 41967
+2022-07-06 15:36:18,192 INFO    MainThread:41900 [wandb_init.py:init():525] backend started and connected
+2022-07-06 15:36:18,198 INFO    MainThread:41900 [wandb_init.py:init():596] updated telemetry
+2022-07-06 15:36:18,210 INFO    MainThread:41900 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2022-07-06 15:36:19,206 INFO    MainThread:41900 [wandb_run.py:_on_init():1924] communicating current version
+2022-07-06 15:36:19,379 INFO    MainThread:41900 [wandb_run.py:_on_init():1928] got version response upgrade_message: "wandb version 0.12.21 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-07-06 15:36:19,379 INFO    MainThread:41900 [wandb_init.py:init():662] starting run threads in backend
+2022-07-06 15:36:20,162 INFO    MainThread:41900 [wandb_run.py:_console_start():1898] atexit reg
+2022-07-06 15:36:20,163 INFO    MainThread:41900 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.REDIRECT
+2022-07-06 15:36:20,163 INFO    MainThread:41900 [wandb_run.py:_redirect():1776] Redirecting console.
+2022-07-06 15:36:20,164 INFO    MainThread:41900 [wandb_run.py:_redirect():1832] Redirects installed.
+2022-07-06 15:36:20,164 INFO    MainThread:41900 [wandb_init.py:init():688] run started, returning control to user process
+2022-07-06 17:01:33,020 ERROR   MainThread:41900 [retry.py:__call__():132] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/anis/miniforge3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x1397b1040>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1397b1040>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 108, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/wandb/apis/public.py", line 204, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/anis/miniforge3/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1397b1040>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2022-07-06 20:15:09,256 INFO    MainThread:41900 [wandb_run.py:_finish():1685] finishing run anismhaddouche/ner_train_v1/3jsf00dz
+2022-07-06 20:15:09,257 INFO    MainThread:41900 [wandb_run.py:_atexit_cleanup():1867] got exitcode: 0
+2022-07-06 20:15:09,257 INFO    MainThread:41900 [wandb_run.py:_restore():1839] restore
+2022-07-06 20:15:11,929 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11109128
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:12,442 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11109128
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:12,799 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11109128
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:13,668 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:13,780 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:13,891 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,001 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,113 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,214 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11109128
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,323 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11124616
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,436 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11124616
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,548 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11124616
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,658 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11124616
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:14,767 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11124616
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:15,543 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11124616
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+
+2022-07-06 20:15:15,891 INFO    MainThread:41900 [wandb_run.py:_on_finish():1996] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  artifact_count: 31
+}
+pusher_stats {
+  uploaded_bytes: 11124616
+  total_bytes: 11124616
+  deduped_bytes: 8487766
+}
+local_info {
+}
+
+2022-07-06 20:15:17,044 INFO    MainThread:41900 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-07-06 20:15:17,045 INFO    MainThread:41900 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2022-07-06 20:15:17,047 INFO    MainThread:41900 [wandb_run.py:_footer_sync_info():3060] logging synced files

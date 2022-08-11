@@ -1,0 +1,2 @@
+[spacy_models]
+fr_LabnbookNer = fr_LabnbookNer

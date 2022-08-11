@@ -1,0 +1,91 @@
+get_dev_corrected:
+  cmd: python -m spacy run get_dev_corrected
+  script:
+    - 'python3 scripts/get_data_from_db.py  fr dev_corrected '
+  deps: []
+  outs: []
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+get_train_corrected:
+  cmd: python -m spacy run get_train_corrected
+  script:
+    - python3 scripts/get_data_from_db.py  fr train_corrected
+  deps: []
+  outs: []
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+create-config:
+  cmd: python -m spacy run create-config
+  script:
+    - python -m spacy init fill-config configs/base_config.cfg configs/config.cfg
+  deps: []
+  outs: []
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+train:
+  cmd: python -m spacy run train
+  script:
+    - python -m spacy train configs/config.cfg  --output training/ --paths.train corpus/train_corrected.spacy
+      --paths.dev corpus/dev_corrected.spacy --code scripts/functions.py
+  deps:
+    - path: configs/config.cfg
+      md5: 13d776f681eb6a6e2f5d113f545bd4f5
+    - path: corpus/dev_corrected.spacy
+      md5: 68819a1c994a7f3ed99a94946c89503a
+    - path: corpus/train_corrected.spacy
+      md5: b06084cb418c3ff42b92ec1755a3aec9
+  outs:
+    - path: training/model-best
+      md5: 458237136df34e30742f783433eaecac
+    - path: training/model-last
+      md5: 0ceaf69659eabfb5877a63821e3a8930
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+evaluate:
+  cmd: python -m spacy run evaluate
+  script:
+    - python -m spacy evaluate training/model-best corpus/dev_corrected.spacy --output
+      training/metrics.json
+  deps:
+    - path: corpus/dev_corrected.spacy
+      md5: 68819a1c994a7f3ed99a94946c89503a
+    - path: training/model-best
+      md5: 458237136df34e30742f783433eaecac
+  outs:
+    - path: training/metrics.json
+      md5: 2bae3bdff096b062cbfcb2327fb84968
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+readme:
+  cmd: python -m spacy run readme
+  script:
+    - python -m spacy project document --output README.md
+  deps: []
+  outs:
+    - path: README.md
+      md5: 7a0a321ce87aaeeb98146628b3bd99f3
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+package-model:
+  cmd: python -m spacy run package-model
+  script:
+    - python -m spacy package training/model-best packages --name LabnbookNer --version
+      0.0.0 --force --code scripts/components.py
+  deps:
+    - path: training/model-best
+      md5: db4a7d5884482a2d94476c5158f2c941
+  outs: []
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77
+add_components:
+  cmd: python -m spacy run add_components
+  script:
+    - python3  scripts/add_components.py training/model-best
+  deps:
+    - path: training/model-best
+      md5: db4a7d5884482a2d94476c5158f2c941
+  outs:
+    - path: training/model-best
+      md5: db4a7d5884482a2d94476c5158f2c941
+  spacy_version: 3.3.1
+  spacy_git_version: 5fb597f77

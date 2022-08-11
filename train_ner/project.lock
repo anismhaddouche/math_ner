@@ -1,0 +1,96 @@
+get_init:
+  cmd: python -m spacy run get_init
+  script:
+    - python3 scripts/get_init.py root localhost Labnbook 11950022   labdoc_init configs/regex_text.json
+  deps:
+    - path: configs/regex_text.json
+      md5: 6ceb940daa369286b50ca3c69e24225e
+  outs:
+    - path: source/labdoc_init.jsonl
+      md5: d390cfb15c4ea0cc3bc081911f77af2d
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+get_sample:
+  cmd: python -m spacy run get_sample
+  script:
+    - python3 scripts/get_sample.py source/labdoc_init.jsonl  source/labdoc_init_sample.jsonl   700
+      configs/regex_ner.json
+  deps:
+    - path: source/labdoc_init.jsonl
+      md5: d390cfb15c4ea0cc3bc081911f77af2d
+  outs:
+    - path: source/labdoc_init_sample.jsonl
+      md5: 0d9273e9208b2253859e9fa681a37959
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+get_train:
+  cmd: python -m spacy run get_train
+  script:
+    - python3 scripts/get_train.py  fr  source/labdoc_init_sample.jsonl    0.8 configs/regex_ner.json
+  deps:
+    - path: source/labdoc_init_sample.jsonl
+      md5: 0d9273e9208b2253859e9fa681a37959
+  outs:
+    - path: assets/dev.jsonl
+      md5: 85ca5912bdd148f94734f11dd1087380
+    - path: assets/train.jsonl
+      md5: 2e1495f4eca769ab2d10552a28c6446f
+    - path: corpus/dev.spacy
+      md5: 173881b20173750c7818875dd84b7113
+    - path: corpus/train.spacy
+      md5: 27c85fa1e0956b6579345b96c66e8810
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+create-config:
+  cmd: python -m spacy run create-config
+  script:
+    - python -m spacy init fill-config configs/base_config.cfg configs/config.cfg
+  deps:
+    - path: configs/base_config.cfg
+      md5: 57869f7755613407bafab1d55c6b826d
+  outs:
+    - path: configs/config.cfg
+      md5: 36ddfda5976977abee48acd49b4fddd2
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+train:
+  cmd: python -m spacy run train
+  script:
+    - python -m spacy train configs/config.cfg  --output training/ --paths.train corpus/train.spacy
+      --paths.dev corpus/dev.spacy
+  deps:
+    - path: configs/config.cfg
+      md5: 36ddfda5976977abee48acd49b4fddd2
+    - path: corpus/dev.spacy
+      md5: 173881b20173750c7818875dd84b7113
+    - path: corpus/train.spacy
+      md5: 27c85fa1e0956b6579345b96c66e8810
+  outs:
+    - path: training/model-best
+      md5: d0ca3c15727ecbe98fd1459c4c831a32
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+evaluate:
+  cmd: python -m spacy run evaluate
+  script:
+    - python -m spacy evaluate training/model-best corpus/dev.spacy --output training/metrics.json
+  deps:
+    - path: corpus/dev.spacy
+      md5: 173881b20173750c7818875dd84b7113
+    - path: training/model-best
+      md5: d0ca3c15727ecbe98fd1459c4c831a32
+  outs:
+    - path: training/metrics.json
+      md5: b5c5391773a07e1b5875dfe70a75ebd1
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6
+readme:
+  cmd: python -m spacy run readme
+  script:
+    - python -m spacy project document --output README.md
+  deps: []
+  outs:
+    - path: README.md
+      md5: 6983d8055362881337bf2edfcbd42828
+  spacy_version: 3.2.4
+  spacy_git_version: b50fe5ec6

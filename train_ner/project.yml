@@ -1,0 +1,172 @@
+title: "Train a NER model with Spacy according to a Regex patterns"
+description: "In this project, we train a NER model to detect entities in text Labdocs according to Regex Patterns. This model will be used (in other project) to improve annotation manually using Prodigy where the improved annotation will be used to train a new model."
+spacy_version: ">=3.0.6,<4.0.0"
+
+
+ 
+# =======================================vars=======================================================================================
+vars:
+  # A number of sample tex labdocs to annotate
+  user : "root"
+  password : 11950022
+  host : "localhost"
+  database : "Labnbook"
+  sample_size : 700
+  train_size : 0.8
+  # The name of the jsonl file of the text labdocs
+  name : "labdoc_init"
+  lang: "fr"
+  #regex patterns for cleaning text labdocs 
+  regex_text: "regex_text.json" 
+  #regex patterns for sampling labdocs  labels
+  regex_ner : "regex_ner.json"
+  # The dataset where the annotated labdoc are strored. It can be found in prodigy.db database
+  pipeline  : "fr_core_news_md"
+  train: "train"
+  dev: "dev"
+  version: "0.0.0"
+  # Set your GPU ID, -1 is CPU
+  gpu_id: -1
+# =======================================directories=======================================================================================
+directories: ["corpus","scripts","source","assets","configs","training"]
+# Files that should be available in the directory
+configs:
+  - dest: "configs/base_config.cfg"
+    description: "Base config file which can is used to create the config files. See the widget in https://spacy.io/usage/training for more details."
+  - dest: "configs/${vars.regex_ner}"
+    description: "Regex patterns for annotate labels"
+  - dest: "configs/${vars.regex_text}"
+    description: "Regex patterns for clean text"
+# ============================================workflows=======================================================================================
+workflows:
+  get_labdocs:
+    - get_init
+    - get_sample
+    - get_train
+    - create-config
+  train_ner:
+    - train
+    - evaluate
+    - readme
+    #- package-model
+    #- visualize-model
+  
+ # ============================================commands====================================================================================
+commands:
+  - name: "get_init"
+    help: "Get all cleaned text Labdocs according to the regex patterns ${vars.regex_text}. We extract one Labdoc from each report. See the 'clean_text' function for more details about the applied clean."
+    script:
+        - "python3 scripts/get_init.py ${vars.user} ${vars.host} ${vars.database} ${vars.password}   ${vars.name} configs/${vars.regex_text}"
+    outputs:
+        - "source/${vars.name}.jsonl"
+    deps:
+        - "configs/${vars.regex_text}"
+## ----------------------------------------------------------------------------------------------------------------------
+  - name: "get_sample"
+    help: "Get a sample of Labdocs with equations and table "
+    script:
+        - "python3 scripts/get_sample.py source/${vars.name}.jsonl  source/${vars.name}_sample.jsonl   ${vars.sample_size} configs/${vars.regex_ner}"
+    outputs:
+        - "source/${vars.name}_sample.jsonl"
+    deps: 
+        - "source/${vars.name}.jsonl"
+## ----------------------------------------------------------------------------------------------------------------------      
+  - name: "get_train"
+    help: "Get a sample of Labdocs according to the Regex patterns in ${vars.regex_ner} for training and testing a NER model from scratch"
+    script:
+      - "python3 scripts/get_train.py  ${vars.lang}  source/${vars.name}_sample.jsonl    ${vars.train_size} configs/${vars.regex_ner}"
+    outputs:
+      - assets/${vars.dev}.jsonl
+      - assets/${vars.train}.jsonl
+      - corpus/${vars.dev}.spacy
+      - corpus/${vars.train}.spacy
+    deps: 
+      - "source/${vars.name}_sample.jsonl"
+## ----------------------------------------------------------------------------------------------------------------------
+  - name: "create-config"
+    help: "Create a config for replacing only NER from an existing pipeline"
+    script:
+      - "python -m spacy init fill-config configs/base_config.cfg configs/config.cfg"
+      #- "python -m spacy debug data configs/config.cfg --paths.train corpus/train.spacy --paths.dev corpus/dev.spacy"
+
+    deps:
+      - "configs/base_config.cfg"
+    outputs:
+      - "configs/config.cfg"
+## ----------------------------------------------------------------------------------------------------------------------
+  - name: "train"
+    help: "Train the NER model"
+    script:
+      - "python -m spacy train configs/config.cfg  --output training/ --paths.train corpus/${vars.train}.spacy --paths.dev corpus/${vars.dev}.spacy"
+    deps:
+      - "configs/config.cfg"
+      - "corpus/${vars.dev}.spacy"
+      - "corpus/${vars.train}.spacy"
+    outputs:
+        - "training/model-best"
+## ----------------------------------------------------------------------------------------------------------------------
+  - name: "evaluate"
+    help: "Evaluate the model and export metrics"
+    script:
+      - "python -m spacy evaluate training/model-best corpus/${vars.dev}.spacy --output training/metrics.json"
+    deps:
+      - "corpus/dev.spacy"
+      - "training/model-best"
+    outputs:
+      - "training/metrics.json"
+## ----------------------------------------------------------------------------------------------------------------------
+  - name: visualize-model
+    help: Visualize the model's output interactively using Streamlit
+    script:
+      - "streamlit run scripts/visualize_model.py training/model-best \"la fonction y = a*x + b est celle d'une droite.\""
+    deps:
+      - "scripts/visualize_model.py"
+      - "training/model-best"
+## ----------------------------------------------------------------------------------------------------------------------
+  - name: package-model
+    help: "Package the trained model as a pip package"
+    script:
+      - "python -m spacy package training/model-best packages --name ${vars.name} --version ${vars.version} --force"
+    deps:
+      - "training/model-best"
+    outputs_no_cache:
+      - "packages/${vars.lang}_${vars.name}-${vars.version}/dist/${vars.lang}_${vars.name}-${vars.version}.tar.gz"
+
+## ----------------------------------------------------------------------------------------------------------------------
+  - name: readme
+    help: "Create a readme file"
+    script:
+      - "python -m spacy project document --output README.md"
+
+    outputs:
+      - "README.md"
+# ================================================================================================================================
+
+  # - name: get_dev-train 
+  #   help: "Get the dev and train and concatenate them in JSONL "
+  #   script:
+  #     - "python scripts/get_devtrain.py assets/${vars.dev} assets/${vars.train} assets/${vars.devtrain}"
+
+
+  # - name: correct_dev
+  #   help: "Correct the NER dev and tain data"
+  #   script:
+  #     - "python -m prodigy ner.correct   ${vars.dev}_corrected packages/${vars.lang}_${vars.name}-${vars.version}/${vars.lang}_${vars.name}/${vars.lang}_${vars.name}-${vars.version} assets/${vars.dev}"
+  
+  # - name: correct_train
+  #   help: "Correct the NER dev and tain data"
+  #   script:
+  #     - "python -m prodigy ner.correct   ${vars.dev}_corrected packages/${vars.lang}_${vars.name}-${vars.version}/${vars.lang}_${vars.name}/${vars.lang}_${vars.name}-${vars.version} assets/${vars.dev}"
+     
+
+  #     #- Récuperer de la base de données dev_corrected et train_corrected et les repasser comme argument aux workflow train
+
+  # - name: retrain
+  #   help: "Retrain the model with the new data"
+  #   script:
+  #     - "Python -m prodigy train   ./tmp_model --ner  ${vars.database_prodigy}  --base-model packages/${vars.lang}_${vars.name}-${vars.version}/${vars.lang}_${vars.name}/${vars.lang}_${vars.name}-${vars.version}"
+  #   outputs:
+  #     - "assets/${vars.dev}-${vars.train}.jsonl"
+
+
+   

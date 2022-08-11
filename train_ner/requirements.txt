@@ -1,0 +1,12 @@
+beautifulsoup4==4.11.1
+jsonlines==3.0.0
+mysql_connector_repackaged==0.3.1
+pandas==1.4.1
+prodigy==1.11.7
+setuptools==62.3.2
+spacy==3.2.4
+spacy_streamlit==1.0.3
+srsly==2.4.3
+streamlit==1.10.0
+tqdm==4.64.0
+typer==0.4.1

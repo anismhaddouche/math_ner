@@ -1,0 +1,45 @@
+{
+    "DATA_KATEX":
+                {"expression":"data-katex=\"(.*?)\">","//description": "Found LaTex formulas in the data-katex html class"},
+    "DATA_TABLE":
+                {"expression":"(<table)([\\S\\s]+)(table>)","//description": "Found tables in the table html class"},
+    "DATA_TABLE_CELL":
+                {"expression":"(</td>)","//description": "Found end of Cells in the tr html table class"},
+    "PARAGRAPH_END":
+                {"expression":"(</p>)","//description": "Found paragraphs end in the html "},
+    "PARAGRAPH_END-DOT":
+                {"expression":"\\.§","//description": "Found text like .§ in the html "},
+    "MULTIPLE_END_PARAGRAPHS":
+                {"expression":"(§\\s+){2,}|§§{1,}","//description": "Found multiple new paragraphs in the html "},
+    "MULTIPLE_END_PARAGRAPHS_IN_END_LABDOC":
+                {"expression":"§{2,}","//description": "Found §§ in the end of a labdoc"},
+    "NEW_LINES":
+                {"expression":"(\\n)\\s+|s\\1+","//description": "Found newlines (ex. '\\n' or '\\n\\n)'"},
+    "DOTS":
+                {"expression": "(\\.+)","//description": "Found a dot succession (ex. '.....')"},
+    "SPACES":
+                {"expression":"\\s+","//description": "Found a space succession (ex.'   ')"},
+    "DASHES":
+                {"expression":"(\\-+)","//description": "Found a dash succession (ex. '----')"},
+    "UNDERSCORES":
+                {"expression":"(_+)","//description": "Found an underscore succession (ex. '___')"},
+    "BACKSLASH":
+                {"expression": "(\\\\)","//description": "Found backslash"},
+    "COMA_NUMBERS":
+                {"expression":"(\\d)(,)(\\d)","//description": "Found a coma in a number (ex. '1,000')"},
+    "MATH_OP_EXTRA_SPACES":
+                {"expression":"(.*?)\\s{0,}(=|-|\\+|\\*|/|±|×|x|≈|÷|≠|≡|∼|≤|<|≪|≥|≫|∓|⋅|<=>)\\s{0,}(.*?)","//description": "Found an operator with extra spaces (ex. 'a = b')"},
+    "SI_UNITS_SPACE":
+                {"expression":"(\\d+)\\s{1,}([\\*]{0,}(10)|°C |[cdCDkKMmµGk]{0,}([mM]ol|[cC]d|m./.|Ω|µ|[Rr]ad|[oO]hm|H[zZ]|lm|lux|[kK]at|pa|kg|Gy|(N|J|W|A|V|C|T|F|H|K|g|s|m)(\\s|.|,)))"
+                    ,"//description": "Found a space between a number and a SI unit (ex. 1 m)"},
+    "BRACKETS_SPACES":
+                {"expression":"(\\(|\\[|\\{)\\s{0,}(.*?)\\s{0,}(\\}|\\]|\\))","_description": "Found a space between round, square and curly brackets and a text (ex. '(a)'"},
+    "WORD_SPACES_COMA-DOT":
+                {"expression":"(\\w)\\s{1,}(,.|\\..)","\\description": "Found a space between a word and a coma or dot (ex. hello  .)"},
+    "COMA_WORD":    
+                {"expression":"(\\,)([a-zA-Z])","\\description": "Found a coma paste in word (ex. ',hello')"},
+    "WORD_COLON":
+                {"expression":"([a-zA-Z])(\\:)\\s+","\\description": "Found a colon paste in word (ex. 'hello:  ')"}
+}    
+
+ 

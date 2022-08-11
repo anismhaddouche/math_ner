@@ -1,0 +1,5 @@
+E    #       LOSS TOK2VEC  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE
+---  ------  ------------  --------  ------  ------  ------  ------
+[34m[1mwandb[39m[22m: Adding directory to artifact (./corpus)... Done. 0.0s
+  0       0          0.00     31.67    0.00    0.00    0.00    0.00
+  0     200       9265.30   7636.69    2.44    6.64    1.49    0.02

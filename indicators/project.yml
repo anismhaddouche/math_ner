@@ -1,0 +1,241 @@
+title : "Compute the indicators for each Labdoc version"
+# ======================================= vars =======================================================================================
+vars : 
+  db : 
+    user : "root"
+    password : 11950022
+    host : "localhost"
+    database : "Labnbook"
+  regex :
+    regex_text : "configs/regex_text.json"
+  result : "collab.json.gz"
+  visualization :
+    id_labdoc : 288282
+    id_report : 31489
+    id_mission : 1044
+
+
+
+ # ============================================ directories ===========================================================================
+directories : ["model","scripts","versioning","configs"]
+# model:
+#   - dest: " "
+#   - description: "  "
+# scripts:
+#   - dest: " "
+#     description: "The initial annotated train data that will be corrected by prodigy"
+# ================================================workflows=======================================================================
+workflows : 
+      extract_labdoc_text_versions :
+        - extract_labdoc_text_init
+        - extract_labdoc_text
+      compute_contributions_matrices : 
+        # - contrib_and_segmentation
+        - collaboration 
+        - report
+        - readme
+
+# ===================================================commands=======================================================================
+commands : 
+    - name: "extract_labdoc_text_init"
+      help: "Get the id of text labdocs as well as the initial texts (with html tags) written by teachers."
+      script:
+        - "python3 scripts/extract_labdoc_text_init.py ${vars.db.user} ${vars.db.password} ${vars.db.host} ${vars.db.database}"
+      outputs:
+        - "tmp/labdocs_texts_init.json.gz"
+##  ----------------------------------------------------------------------------------------------------------------------
+    - name: "extract_labdoc_text"
+      help: "Extracts the text of each version of labdoc by removing the html tags and clean texts according to regex patterns."
+      script:
+        - "python3 scripts/extract_labdoc_text.py ${vars.regex.regex_text}"
+      outputs:
+        - "tmp/missions_texts/"
+##  ----------------------------------------------------------------------------------------------------------------------
+    - name: "contrib_and_segmentation"
+      help: ""
+      script:
+        - "python3 scripts/contrib_and_segmentation.py"
+      deps:
+        - "tmp/missions_texts/"
+      outputs:
+        - "/tmp/missions_contribs/"
+##  ----------------------------------------------------------------------------------------------------------------------
+    - name: "collaboration"
+      help: ""
+      script:
+        - "python3 scripts/collaboration.py"
+      deps:
+        - "tmp/missions_texts/"
+      outputs:
+        - "tmp/collab.json.gz"
+        - "tmp/collab.csv"
+##  ----------------------------------------------------------------------------------------------------------------------
+    - name: "report"
+      help: "Compute some reports about the indicators for each labdoc."
+      script:
+        - "python3 scripts/summary.py tmp/${vars.result}"
+      deps:
+        - "tmp/collab.json.gz"
+      outputs:
+        - "tmp/summary.csv"
+## ----------------------------------------------------------------------------------------------------------------------
+    - name: readme
+      help: "Create a readme file"
+      script:
+        - "python -m spacy project document --output README.md"
+
+      outputs:
+        - "README.md"
+     
+
+
+
+
+
+
+
+
+# # =======================================vars=======================================================================================
+# vars :
+#     shared : 
+#       lang : "fr"
+#     prodigy:
+#       test : "hello"
+#       dev_dataset : "dev_corrected"
+#       train_dataset : "train_corrected"
+#       path_model : "source/training/model-best"
+#       dev : "dev.jsonl"
+#       train : "train.jsonl"
+#     spacy : 
+#       dev : dev_corrected.spacy
+#       train : train_corrected.spacy
+#       name : "LabnbookNer"
+#       version : "0.0.0"
+
+
+# # ============================================directories===========================================================================
+# directories : ["scripts","assets","scripts","configs","training","packages"]
+# configs:
+#   - dest: "configs/base_config.cfg"
+# scripts:
+#   - dest: "scripts/train.jsonl"
+#     description: "The initial annotated train data that will be corrected by prodigy"
+#   - dest: "scripts/dev.jsonl"
+#     description: "The initial annotated dev data that will be corrected by prodigy"
+
+# # ================================================workflows=======================================================================
+# workflows : 
+#     final_ner:
+#       - add_components
+#     correct_dev : 
+#       - correct__dev
+#     correct_train :
+#       - correct__train  
+#     get_devtrain_from_db:
+#       - get_dev_corrected
+#       - get_train_corrected
+#     correct_ner:
+#         - create-config
+#         - train
+#         - evaluate
+#         - add_components
+#         - package-model
+#         - readme
+#         #- visualize-model
+
+# # ===================================================commands====================================================================
+# commands : 
+#     - name: "test1"
+#       help: "Test"
+#       script:
+#         - "python3 scripts/test.py --test ${vars.prodigy.test}"
+# ##  ----------------------------------------------------------------------------------------------------------------------
+#     - name: "correct__dev"
+#       help: " correcte the annotated data in scripts/${vars.prodigy.dev} "
+#       script:
+#        # - "python -m prodigy ner.correct  ${vars.prodigy.dev_dataset} model/${vars.shared.model} scripts/${vars.prodigy.dev}"
+#         - "python -m prodigy ner.correct  ${vars.prodigy.dev_dataset} ${vars.prodigy.path_model} scripts/${vars.prodigy.dev}"
+
+# ##  ----------------------------------------------------------------------------------------------------------------------
+#     - name: "correct__train"
+#       help: "correcte the annotated data in scripts/${vars.prodigy.train} "
+#       script:
+#         - "python -m prodigy ner.correct  ${vars.prodigy.train_dataset} ${vars.prodigy.path_model} scripts/${vars.prodigy.train}"
+# ##  ----------------------------------------------------------------------------------------------------------------------
+#     - name: "get_dev_corrected"
+#       help: "get the corrected dev dataset  from prodigy database"
+#       script:
+#         - "python3 scripts/get_data_from_db.py  ${vars.shared.lang} ${vars.prodigy.dev_dataset} "
+# ##  ----------------------------------------------------------------------------------------------------------------------
+#     - name: "get_train_corrected"
+#       help: "get the corrected train dataset  from prodigy database in "
+#       script:
+#         - "python3 scripts/get_data_from_db.py  ${vars.shared.lang} ${vars.prodigy.train_dataset}"
+# ##  ----------------------------------------------------------------------------------------------------------------------
+#     - name: "create-config"
+#       help: "Create a config for replacing only NER from an existing pipeline"
+#       script:
+#         - "python -m spacy init fill-config configs/base_config.cfg configs/config.cfg"
+#         #- "python -m spacy debug data configs/config.cfg --paths.train corpus/train.spacy --paths.dev corpus/dev.spacy"
+
+# # ----------------------------------------------------------------------------------------------------------------------
+#     - name: "train"
+#       help: "Train the NER model"
+#       script:
+#         - "python -m spacy train configs/config.cfg  --output training/ --paths.train corpus/${vars.spacy.train} --paths.dev corpus/${vars.spacy.dev}"
+#       deps:
+#         - "configs/config.cfg"
+#         - "corpus/${vars.spacy.dev}"
+#         - "corpus/${vars.spacy.train}"
+#       outputs:
+#           - "training/model-best"     
+#           - "training/model-last"
+# # ----------------------------------------------------------------------------------------------------------------------
+#     - name: "evaluate"
+#       help: "Evaluate the model and export metrics"
+#       script:
+#         - "python -m spacy evaluate training/model-best corpus/${vars.spacy.dev} --output training/metrics.json"
+#       deps:
+#         - "corpus/${vars.spacy.dev}"
+#         - "training/model-best"
+#       outputs:
+#         - "training/metrics.json"
+# # ----------------------------------------------------------------------------------------------------------------------
+#     - name: "add_components"
+#       help: "Add the components to the model"
+#       script:
+#         - "python3  scripts/add_components.py training/model-best"
+#       deps:
+#         - "training/model-best"
+#       outputs:
+#         - "training/model-best"
+# # ----------------------------------------------------------------------------------------------------------------------
+#     - name: package-model
+#       help: "Package the trained model as a pip package"
+#       script:
+#         - "python -m spacy package training/model-best packages --name ${vars.spacy.name} --version ${vars.spacy.version} --force --code scripts/components.py"
+#         #- "python -m spacy package training/model-best  packages --name ${vars.shared.model}} "
+#       deps:
+#         - "training/model-best"
+# #      outputs_no_cache:
+# #       - "packages/${vars.shared.lang}_${vars.shared.model}-${vars.shared.version}/dist/${vars.shared.lang}_${vars.shared.model}-${vars.shared.version}.tar.gz"
+
+# # # ----------------------------------------------------------------------------------------------------------------------
+#     - name: visualize-model
+#       help: Visualize the model's output interactively using Streamlit
+#       script:
+#         - "streamlit run scripts/visualize_model.py training/model-best \"la fonction y = a*x + b est celle d'une droite.\""
+#       deps:
+#         - "scripts/visualize_model.py"
+#         - "training/model-best"
+# # ----------------------------------------------------------------------------------------------------------------------
+#     - name: readme
+#       help: "Create a readme file"
+#       script:
+#         - "python -m spacy project document --output README.md"
+
+#       outputs:
+#         - "README.md"
+
+
+  

@@ -1,0 +1,69 @@
+
+[34m[1mwandb[39m[22m: Adding directory to artifact (./corpus)... Done. 0.0s
+E    #       LOSS TOK2VEC  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE
+---  ------  ------------  --------  ------  ------  ------  ------
+  0       0          0.00    191.72    0.00    0.00    0.00    0.00
+  0     200      77174.21   7739.76    7.53   12.53    5.38    0.08
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  0     400       8094.04   5295.24   13.84   15.42   12.55    0.14
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  1     600       3896.00   4849.00   23.20   21.07   25.80    0.23
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  1     800      13362.33   3563.46   27.75   31.83   24.60    0.28
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  2    1000       1267.04   3320.80   33.39   39.01   29.18    0.33
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  2    1200       2054.73   3073.33   33.49   35.16   31.97    0.33
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  3    1400       1134.23   2598.63   30.78   33.61   28.39    0.31
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  3    1600        735.68   2860.81   35.06   38.24   32.37    0.35
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  4    1800       1044.48   2674.25   33.19   37.01   30.08    0.33
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  5    2000       1197.70   2988.06   34.26   38.79   30.68    0.34
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  6    2200       1222.50   2839.30   36.00   39.09   33.37    0.36
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  7    2400       1798.08   3514.84   33.99   39.07   30.08    0.34
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  8    2600       1430.85   3233.01   36.71   39.54   34.26    0.37
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+  9    2800      80736.11   4067.48   35.67   37.19   34.26    0.36
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 11    3000       3555.82   4027.03   37.42   42.28   33.57    0.37
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 13    3200       8657.95   3456.49   39.45   43.70   35.96    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 14    3400      14449.66   3444.36   36.34   39.22   33.86    0.36
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 16    3600      15669.17   3113.57   37.29   39.82   35.06    0.37
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 18    3800      18407.79   2968.02   38.82   41.02   36.85    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 20    4000       8223.05   2698.57   39.08   42.37   36.25    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 22    4200      14794.34   2986.01   39.45   41.93   37.25    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 23    4400       5123.64   2648.69   37.87   40.25   35.76    0.38
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 25    4600       5221.97   2313.77   37.09   43.24   32.47    0.37
+ 27    4800       4817.37   2401.07   39.93   43.86   36.65    0.40
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 29    5000       6653.10   2393.14   38.72   40.79   36.85    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 31    5200       3402.70   2224.94   38.82   41.38   36.55    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 32    5400       2722.94   2240.84   39.21   43.41   35.76    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 34    5600       2128.41   2307.90   38.85   41.84   36.25    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 36    5800       8269.11   2297.48   37.16   40.74   34.16    0.37
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 38    6000       1368.45   1917.42   38.18   39.61   36.85    0.38
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 40    6200       8934.09   2323.25   38.66   40.17   37.25    0.39
+[34m[1mwandb[39m[22m: Adding directory to artifact (./training/model-last)... Done. 0.0s
+ 42    6400      19062.76   2278.34   39.69   41.71   37.85    0.40

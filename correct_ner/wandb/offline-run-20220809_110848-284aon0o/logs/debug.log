@@ -1,0 +1,36 @@
+2022-08-09 11:08:48,885 INFO    MainThread:82558 [wandb_setup.py:_flush():76] Loading settings from /Users/anis/.config/wandb/settings
+2022-08-09 11:08:48,885 INFO    MainThread:82558 [wandb_setup.py:_flush():76] Loading settings from /Users/anis/test_labnbook/math_ner/correct_ner/wandb/settings
+2022-08-09 11:08:48,885 INFO    MainThread:82558 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-08-09 11:08:48,885 WARNING MainThread:82558 [wandb_setup.py:_flush():76] Could not find program at -m spacy.__main__
+2022-08-09 11:08:48,885 INFO    MainThread:82558 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m spacy.__main__'}
+2022-08-09 11:08:48,885 INFO    MainThread:82558 [wandb_setup.py:_flush():76] Applying login settings: {'mode': 'offline'}
+2022-08-09 11:08:48,886 INFO    MainThread:82558 [wandb_init.py:_log_setup():428] Logging user logs to /Users/anis/test_labnbook/math_ner/correct_ner/wandb/offline-run-20220809_110848-284aon0o/logs/debug.log
+2022-08-09 11:08:48,886 INFO    MainThread:82558 [wandb_init.py:_log_setup():429] Logging internal logs to /Users/anis/test_labnbook/math_ner/correct_ner/wandb/offline-run-20220809_110848-284aon0o/logs/debug-internal.log
+2022-08-09 11:08:48,886 INFO    MainThread:82558 [wandb_init.py:init():462] calling init triggers
+2022-08-09 11:08:48,886 INFO    MainThread:82558 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {'components': {'ner': {'factory': 'ner', 'incorrect_spans_key': None, 'moves': None, 'scorer': {'@scorers': 'spacy.ner_scorer.v1'}, 'update_with_oracle_cut_size': 100, 'model': {'@architectures': 'spacy.TransitionBasedParser.v2', 'state_type': 'ner', 'extra_state_tokens': False, 'hidden_width': 64, 'maxout_pieces': 2, 'use_upper': True, 'no': None, 'tok2vec': {'@architectures': 'spacy.Tok2VecListener.v1', 'width': 96, 'upstream': '*'}}}, 'tok2vec': {'factory': 'tok2vec', 'model': {'@architectures': 'spacy.Tok2Vec.v2', 'embed': {'@architectures': 'spacy.MultiHashEmbed.v2', 'width': 96, 'attrs': ['ORTH', 'SHAPE'], 'rows': [5000, 2500], 'include_static_vectors': False}, 'encode': {'@architectures': 'spacy.MaxoutWindowEncoder.v2', 'width': 96, 'depth': 4, 'window_size': 1, 'maxout_pieces': 3}}}}, 'corpora': {'dev': {'@readers': 'spacy.Corpus.v1', 'max_length': 0, 'gold_preproc': False, 'limit': 0, 'augmenter': None}, 'train': {'@readers': 'spacy.Corpus.v1', 'max_length': 0, 'gold_preproc': False, 'limit': 0, 'augmenter': None}}, 'initialize': {'vectors': None, 'before_init': {'@callbacks': 'customize_tokenizer'}, 'init_tok2vec': None, 'vocab_data': None, 'lookups': None, 'after_init': None}, 'nlp': {'lang': 'fr', 'pipeline': ['tok2vec', 'ner'], 'batch_size': 1000, 'disabled': [], 'before_creation': None, 'after_creation': None, 'after_pipeline_creation': None, 'tokenizer': {'@tokenizers': 'spacy.Tokenizer.v1'}}, 'paths': {'vectors': None, 'init_tok2vec': None}, 'system': {'gpu_allocator': None, 'seed': 0}, 'training': {'dev_corpus': 'corpora.dev', 'train_corpus': 'corpora.train', 'seed': 0, 'gpu_allocator': None, 'dropout': 0.1, 'accumulate_gradient': 1, 'patience': 1600, 'max_epochs': 0, 'max_steps': 20000, 'eval_frequency': 200, 'frozen_components': [], 'annotating_components': [], 'before_to_disk': None, 'batcher': {'@batchers': 'spacy.batch_by_words.v1', 'discard_oversize': False, 'tolerance': 0.2, 'get_length': None, 'size': {'@schedules': 'compounding.v1', 'start': 100, 'stop': 1000, 'compound': 1.001, 't': 0.0}}, 'logger': {'@loggers': 'spacy.WandbLogger.v4', 'project_name': 'ner_correct_v1', 'remove_config_values': ['paths.train', 'paths.dev', 'corpora.train.path', 'corpora.dev.path'], 'log_dataset_dir': 'corpus', 'model_log_interval': 100, 'entity': None, 'run_name': None, 'log_best_dir': None, 'log_latest_dir': None}, 'optimizer': {'@optimizers': 'Adam.v1', 'beta1': 0.9, 'beta2': 0.999, 'l2_is_weight_decay': True, 'l2': 0.01, 'grad_clip': 1.0, 'use_averages': False, 'eps': 1e-08, 'learn_rate': 0.001}, 'score_weights': {'ents_f': 1.0, 'ents_p': 0.0, 'ents_r': 0.0, 'ents_per_type': None}}}
+2022-08-09 11:08:48,886 INFO    MainThread:82558 [wandb_init.py:init():515] starting backend
+2022-08-09 11:08:48,886 INFO    MainThread:82558 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-08-09 11:08:48,903 INFO    MainThread:82558 [backend.py:ensure_launched():217] starting backend process...
+2022-08-09 11:08:48,911 INFO    MainThread:82558 [backend.py:ensure_launched():222] started backend process with pid: 82660
+2022-08-09 11:08:48,912 INFO    MainThread:82558 [wandb_init.py:init():525] backend started and connected
+2022-08-09 11:08:48,920 INFO    MainThread:82558 [wandb_init.py:init():596] updated telemetry
+2022-08-09 11:08:48,933 INFO    MainThread:82558 [wandb_init.py:init():662] starting run threads in backend
+2022-08-09 11:08:53,947 INFO    MainThread:82558 [wandb_run.py:_console_start():1898] atexit reg
+2022-08-09 11:08:53,947 INFO    MainThread:82558 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.REDIRECT
+2022-08-09 11:08:53,948 INFO    MainThread:82558 [wandb_run.py:_redirect():1776] Redirecting console.
+2022-08-09 11:08:53,949 INFO    MainThread:82558 [wandb_run.py:_redirect():1832] Redirects installed.
+2022-08-09 11:08:53,949 INFO    MainThread:82558 [wandb_init.py:init():688] run started, returning control to user process
+2022-08-09 11:09:04,428 INFO    MainThread:82558 [wandb_run.py:_finish():1685] finishing run ner_correct_v1/284aon0o
+2022-08-09 11:09:04,428 INFO    MainThread:82558 [wandb_run.py:_atexit_cleanup():1867] got exitcode: 0
+2022-08-09 11:09:04,429 INFO    MainThread:82558 [wandb_run.py:_restore():1839] restore
+2022-08-09 11:09:06,592 INFO    MainThread:82558 [wandb_run.py:_on_finish():1996] got exit ret: 
+2022-08-09 11:09:07,082 INFO    MainThread:82558 [wandb_run.py:_on_finish():1996] got exit ret: 
+2022-08-09 11:09:07,189 INFO    MainThread:82558 [wandb_run.py:_on_finish():1996] got exit ret: done: true
+exit_result {
+}
+local_info {
+}
+
+2022-08-09 11:09:08,319 INFO    MainThread:82558 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2022-08-09 11:09:08,319 INFO    MainThread:82558 [wandb_run.py:_footer_history_summary_info():3136] rendering summary

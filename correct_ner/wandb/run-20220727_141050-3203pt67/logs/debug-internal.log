@@ -1,0 +1,1147 @@
+2022-07-27 14:10:50,857 INFO    MainThread:97082 [internal.py:wandb_internal():90] W&B internal server running at pid: 97082, started at: 2022-07-27 14:10:50.857211
+2022-07-27 14:10:50,858 INFO    WriterThread:97082 [datastore.py:open_for_write():75] open: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/run-3203pt67.wandb
+2022-07-27 14:10:50,861 DEBUG   SenderThread:97082 [sender.py:send():235] send: header
+2022-07-27 14:10:50,861 DEBUG   SenderThread:97082 [sender.py:send():235] send: run
+2022-07-27 14:10:51,456 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: check_version
+2022-07-27 14:10:51,460 INFO    SenderThread:97082 [dir_watcher.py:__init__():205] watching files in: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files
+2022-07-27 14:10:51,460 INFO    SenderThread:97082 [sender.py:_start_run_threads():812] run started: 3203pt67 with start time 1658923850
+2022-07-27 14:10:51,460 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:10:51,461 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:10:51,461 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: check_version
+2022-07-27 14:10:51,598 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: run_start
+2022-07-27 14:10:51,599 DEBUG   HandlerThread:97082 [meta.py:__init__():35] meta init
+2022-07-27 14:10:51,602 DEBUG   HandlerThread:97082 [meta.py:__init__():49] meta init done
+2022-07-27 14:10:51,602 DEBUG   HandlerThread:97082 [meta.py:probe():209] probe
+2022-07-27 14:10:51,605 DEBUG   HandlerThread:97082 [meta.py:_setup_git():199] setup git
+2022-07-27 14:10:51,633 DEBUG   HandlerThread:97082 [meta.py:_setup_git():206] setup git done
+2022-07-27 14:10:51,633 DEBUG   HandlerThread:97082 [meta.py:_save_pip():53] save pip
+2022-07-27 14:10:51,634 DEBUG   HandlerThread:97082 [meta.py:_save_pip():67] save pip done
+2022-07-27 14:10:51,634 DEBUG   HandlerThread:97082 [meta.py:_save_conda():74] save conda
+2022-07-27 14:10:52,359 DEBUG   HandlerThread:97082 [meta.py:_save_conda():84] save conda done
+2022-07-27 14:10:52,360 DEBUG   HandlerThread:97082 [meta.py:probe():247] probe done
+2022-07-27 14:10:52,364 DEBUG   SenderThread:97082 [sender.py:send():235] send: telemetry
+2022-07-27 14:10:52,364 DEBUG   SenderThread:97082 [sender.py:send():235] send: files
+2022-07-27 14:10:52,364 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2022-07-27 14:10:52,367 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:10:52,367 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:10:52,463 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/requirements.txt
+2022-07-27 14:10:52,463 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:10:52,463 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-metadata.json
+2022-07-27 14:10:52,464 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/conda-environment.yaml
+2022-07-27 14:10:52,464 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:10:52,587 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:10:52,596 DEBUG   SenderThread:97082 [sender.py:send():235] send: telemetry
+2022-07-27 14:10:52,596 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:10:53,081 INFO    Thread-11 :97082 [upload_job.py:push():132] Uploaded file /tmp/tmp4qboddk0wandb/1iynio6m-wandb-metadata.json
+2022-07-27 14:10:53,375 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact dataset - {'id': 'QXJ0aWZhY3Q6MTYzNjU0ODQ3', 'digest': 'd893a91eb054745e1c8908a3c4595c17', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'dataset', 'alias': 'latest'}, {'artifactCollectionName': 'dataset', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0MDU2MzU2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNjU0ODQ3', 'versionIndex': 1}}, 'version': 'v1'}
+2022-07-27 14:10:54,469 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:10:55,424 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:10:55,425 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:10:55,425 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:10:55,425 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:10:55,425 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:10:55,426 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:10:55,426 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:10:55,427 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:10:55,427 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:10:55,427 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:10:55,427 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:10:55,427 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:10:55,474 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:10:56,479 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:11:07,597 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:11:07,598 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:11:13,868 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:13,870 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:13,870 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:13,870 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:13,871 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:13,872 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:13,874 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:13,874 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:13,874 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:13,874 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:13,874 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:13,875 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:14,108 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:11:14,108 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:11:14,560 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:11:14,560 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:11:16,509 INFO    Thread-21 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:11:16,546 INFO    Thread-24 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:11:16,547 INFO    Thread-25 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:11:16,565 INFO    Thread-14 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/5e/1d23ac5e59d38fb0731325ea04c656
+2022-07-27 14:11:16,567 INFO    Thread-15 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:11:16,567 INFO    Thread-18 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:11:16,577 INFO    Thread-17 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:11:16,612 INFO    Thread-13 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:11:16,659 INFO    Thread-22 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:11:16,733 INFO    Thread-16 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/e8/bb43d6d1f7beb6e486233c3dd8ea93
+2022-07-27 14:11:16,794 INFO    Thread-20 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:11:17,147 INFO    Thread-23 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:11:17,147 INFO    Thread-19 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/b3/07e8fb731c2a38e811f265fa9792c1
+2022-07-27 14:11:18,662 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNjk5NTIx', 'digest': '3c74b3336ce63b9d14f6f32589fb1192', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': None}, 'version': 'latest'}
+2022-07-27 14:11:22,597 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/config.yaml
+2022-07-27 14:11:22,843 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:11:22,844 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:11:28,862 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:11:35,295 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:35,297 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:35,297 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:35,297 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:35,298 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:35,299 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:35,300 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:35,300 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:35,302 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:35,302 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:35,303 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:35,303 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:35,550 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:11:35,550 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:11:35,656 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:11:36,658 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:11:36,810 INFO    Thread-27 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:11:36,811 INFO    Thread-31 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:11:36,811 INFO    Thread-32 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:11:36,811 INFO    Thread-35 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:11:36,811 INFO    Thread-34 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:11:36,811 INFO    Thread-36 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:11:36,811 INFO    Thread-38 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:11:36,811 INFO    Thread-37 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:11:36,811 INFO    Thread-39 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:11:36,811 INFO    Thread-29 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:11:37,263 INFO    Thread-28 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/91/8fcb586ce2d1df780a9fc4168554c5
+2022-07-27 14:11:37,483 INFO    Thread-30 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/91/dd0584039747f3f392a57aa49edb2b
+2022-07-27 14:11:37,699 INFO    Thread-33 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/c7/1cee88d41a521da7df00bb320383ad
+2022-07-27 14:11:38,095 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:11:39,518 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNjk5NjI5', 'digest': 'c9606f2e82331f182c86c76a587660a8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNjk5NTIx', 'versionIndex': 0}}, 'version': 'latest'}
+2022-07-27 14:11:39,519 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:11:54,735 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:11:54,736 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:11:55,861 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:55,861 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:55,861 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:55,861 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:55,862 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:11:55,863 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:55,864 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:55,864 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:55,864 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:55,865 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:11:55,865 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:11:55,865 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:11:56,104 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:11:56,105 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:11:56,741 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:11:56,742 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:11:57,294 INFO    Thread-43 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:11:57,294 INFO    Thread-41 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:11:57,295 INFO    Thread-45 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:11:57,295 INFO    Thread-46 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:11:57,295 INFO    Thread-48 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:11:57,295 INFO    Thread-50 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:11:57,295 INFO    Thread-49 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:11:57,295 INFO    Thread-52 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:11:57,295 INFO    Thread-53 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:11:57,295 INFO    Thread-51 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:11:57,773 INFO    Thread-42 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/74/ffae30698a1222e83b6b24ce6fa687
+2022-07-27 14:11:58,015 INFO    Thread-44 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/78/733497c10b0c593260224fedbee326
+2022-07-27 14:11:58,225 INFO    Thread-47 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/15/dcdc8e0bb92881b45ed6f1598b9cea
+2022-07-27 14:11:59,540 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNjk5NzM1', 'digest': 'b0ecac92a5c90da948ed007d307cefa3', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNjk5NjI5', 'versionIndex': 1}}, 'version': 'latest'}
+2022-07-27 14:12:08,151 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:12:09,955 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:12:09,956 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:12:17,660 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:12:17,662 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:12:17,662 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:12:17,663 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:12:17,663 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:12:17,664 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:12:17,664 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:12:17,664 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:12:17,665 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:12:17,665 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:12:17,665 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:12:17,666 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:12:17,830 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:12:17,903 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:12:17,903 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:12:18,832 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:12:19,509 INFO    Thread-55 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:12:19,509 INFO    Thread-57 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:12:19,509 INFO    Thread-59 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:12:19,509 INFO    Thread-60 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:12:19,509 INFO    Thread-62 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:12:19,509 INFO    Thread-65 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:12:19,509 INFO    Thread-63 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:12:19,509 INFO    Thread-64 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:12:19,509 INFO    Thread-66 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:12:19,509 INFO    Thread-67 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:12:20,056 INFO    Thread-56 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/c5/13818cae17f6dfea3578c74eb05ffc
+2022-07-27 14:12:20,272 INFO    Thread-58 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/df/0daa9467823134a64b55185777885f
+2022-07-27 14:12:20,510 INFO    Thread-61 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/28/a564910b6503f0d084d05639119cc1
+2022-07-27 14:12:21,660 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNjk5ODMw', 'digest': '5d34440ae0344bbc7b8a83406db17068', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNjk5NzM1', 'versionIndex': 2}}, 'version': 'latest'}
+2022-07-27 14:12:25,210 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:12:25,211 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:12:40,041 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:12:40,043 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:12:40,043 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:12:40,044 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:12:40,044 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:12:40,045 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:12:40,045 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:12:40,045 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:12:40,046 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:12:40,046 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:12:40,046 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:12:40,047 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:12:40,294 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:12:40,294 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:12:40,457 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:12:40,934 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:12:40,934 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:12:41,831 INFO    Thread-79 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:12:41,831 INFO    Thread-71 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:12:41,831 INFO    Thread-73 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:12:41,831 INFO    Thread-74 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:12:41,832 INFO    Thread-77 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:12:41,832 INFO    Thread-76 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:12:41,832 INFO    Thread-80 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:12:41,832 INFO    Thread-81 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:12:41,832 INFO    Thread-78 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:12:41,832 INFO    Thread-69 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:12:42,350 INFO    Thread-70 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/56/4c1a463c80b72be0ec714d672572b7
+2022-07-27 14:12:42,577 INFO    Thread-72 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/be/f1229b50134352e77adbd9a053b66a
+2022-07-27 14:12:42,749 INFO    Thread-75 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/15/2d7ecf4c29409604b18ae6a935b738
+2022-07-27 14:12:43,977 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNjk5OTIz', 'digest': '7bb68bbbaac14babb5a985037ab36861', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNjk5ODMw', 'versionIndex': 3}}, 'version': 'latest'}
+2022-07-27 14:12:43,977 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:12:47,609 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:12:59,219 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:12:59,221 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:13:03,698 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:03,699 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:03,699 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:03,699 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:03,700 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:03,700 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:03,701 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:03,701 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:03,701 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:03,701 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:03,701 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:03,702 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:04,016 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:13:04,016 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:13:04,027 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:13:05,033 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:13:05,284 INFO    Thread-94 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:13:05,285 INFO    Thread-85 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:13:05,285 INFO    Thread-83 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:13:05,285 INFO    Thread-87 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:13:05,285 INFO    Thread-88 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:13:05,285 INFO    Thread-90 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:13:05,285 INFO    Thread-91 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:13:05,285 INFO    Thread-92 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:13:05,285 INFO    Thread-93 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:13:05,285 INFO    Thread-95 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:13:05,780 INFO    Thread-84 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/6b/7523d6df38108890490ebc089495e4
+2022-07-27 14:13:05,971 INFO    Thread-86 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/a1/112a0a28e824e6a648809aa3e437b5
+2022-07-27 14:13:06,194 INFO    Thread-89 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/3c/0f454266dfd51410f0a386b756b92f
+2022-07-27 14:13:07,441 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwMDM1', 'digest': '317c318d2f8e4db769f815b1c23507d4', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNjk5OTIz', 'versionIndex': 4}}, 'version': 'latest'}
+2022-07-27 14:13:14,450 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:13:14,452 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:13:27,075 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:13:27,539 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:27,540 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:27,540 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:27,540 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:27,541 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:27,542 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:27,543 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:27,543 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:27,543 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:27,544 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:27,544 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:27,545 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:27,773 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:13:27,773 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:13:28,145 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:13:28,933 INFO    Thread-109:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:13:28,933 INFO    Thread-97 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:13:28,933 INFO    Thread-99 :97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:13:28,933 INFO    Thread-101:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:13:28,933 INFO    Thread-104:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:13:28,933 INFO    Thread-102:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:13:28,933 INFO    Thread-105:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:13:28,933 INFO    Thread-107:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:13:28,933 INFO    Thread-106:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:13:28,933 INFO    Thread-108:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:13:29,149 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:13:29,373 INFO    Thread-98 :97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/41/3d2ae3bdc93959aae093bfd6aa2f81
+2022-07-27 14:13:29,623 INFO    Thread-100:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/82/27ebf56aff5629c3cae5d2e6199c55
+2022-07-27 14:13:29,676 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:13:29,822 INFO    Thread-103:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/a9/0ba357b9a616ac947b34f07341498f
+2022-07-27 14:13:30,931 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwMTQz', 'digest': 'fbe52ca2d164758629f83ab15868b245', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwMDM1', 'versionIndex': 5}}, 'version': 'latest'}
+2022-07-27 14:13:30,931 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:13:46,183 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:13:46,184 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:13:52,448 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:52,449 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:52,449 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:52,449 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:52,451 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:13:52,452 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:52,452 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:52,453 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:52,453 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:52,453 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:13:52,454 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:13:52,454 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:13:52,828 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:13:52,828 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:13:53,260 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:13:53,260 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:13:54,024 INFO    Thread-113:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:13:54,024 INFO    Thread-116:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:13:54,024 INFO    Thread-119:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:13:54,024 INFO    Thread-120:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:13:54,024 INFO    Thread-122:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:13:54,024 INFO    Thread-118:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:13:54,024 INFO    Thread-123:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:13:54,024 INFO    Thread-121:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:13:54,024 INFO    Thread-111:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:13:54,025 INFO    Thread-115:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:13:54,533 INFO    Thread-112:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/69/4a13fd25e79c3b77121704d9f5dba3
+2022-07-27 14:13:54,738 INFO    Thread-114:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/e5/1110a270e9c3d0f4ac3d87d53bba33
+2022-07-27 14:13:54,948 INFO    Thread-117:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/3b/cead0519e57f265db870b90edbbb48
+2022-07-27 14:13:56,276 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwMjQ5', 'digest': 'cbde338db81428cdb3cec0f8b10d4ab7', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwMTQz', 'versionIndex': 6}}, 'version': 'latest'}
+2022-07-27 14:14:01,444 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:14:01,444 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:14:06,605 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:14:16,690 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:14:16,691 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:14:18,873 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:14:18,874 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:14:18,874 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:14:18,874 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:14:18,875 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:14:18,875 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:14:18,876 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:14:18,876 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:14:18,876 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:14:18,876 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:14:18,876 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:14:18,877 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:14:19,117 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:14:19,118 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:14:19,376 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:14:20,342 INFO    Thread-137:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:14:20,343 INFO    Thread-127:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:14:20,343 INFO    Thread-130:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:14:20,343 INFO    Thread-129:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:14:20,343 INFO    Thread-132:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:14:20,343 INFO    Thread-133:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:14:20,343 INFO    Thread-134:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:14:20,343 INFO    Thread-135:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:14:20,343 INFO    Thread-136:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:14:20,343 INFO    Thread-125:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:14:20,795 INFO    Thread-126:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/cc/2d04bcf6c1ea5d97985e79628a67f2
+2022-07-27 14:14:21,033 INFO    Thread-128:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/db/94decae470e42ea3e43a6390fefda9
+2022-07-27 14:14:21,247 INFO    Thread-131:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/a6/e3af9f8de8d8a2a2f7212332a4cd79
+2022-07-27 14:14:21,384 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:14:22,557 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwMzQ2', 'digest': '0d406738eb55e5622814f40cc9d378a8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwMjQ5', 'versionIndex': 7}}, 'version': 'latest'}
+2022-07-27 14:14:31,925 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:14:31,925 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:14:46,017 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:14:47,159 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:14:47,160 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:14:47,160 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:14:47,160 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:14:47,160 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:14:47,161 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:14:47,161 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:14:47,161 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:14:47,162 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:14:47,162 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:14:47,162 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:14:47,162 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:14:47,495 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:14:47,993 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:14:47,993 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:14:48,450 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:14:49,363 INFO    Thread-139:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:14:49,364 INFO    Thread-144:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:14:49,364 INFO    Thread-143:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:14:49,364 INFO    Thread-147:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:14:49,364 INFO    Thread-149:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:14:49,364 INFO    Thread-148:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:14:49,364 INFO    Thread-151:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:14:49,364 INFO    Thread-150:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:14:49,364 INFO    Thread-141:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:14:49,365 INFO    Thread-146:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:14:49,503 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:14:49,836 INFO    Thread-140:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/e2/dcbb0c94197bc2812d237474d07a82
+2022-07-27 14:14:50,047 INFO    Thread-142:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/95/84f2d947250236bf95691cf2955573
+2022-07-27 14:14:50,260 INFO    Thread-145:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/db/cb4418566919f357dbd7908d0fd593
+2022-07-27 14:14:51,568 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwNDU0', 'digest': '40e5ef59f371b36da249f9d1b6de50c5', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwMzQ2', 'versionIndex': 8}}, 'version': 'latest'}
+2022-07-27 14:14:51,569 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:15:06,798 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:15:06,799 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:15:18,979 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:15:18,980 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:15:18,980 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:15:18,981 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:15:18,981 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:15:18,983 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:15:18,983 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:15:18,983 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:15:18,984 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:15:18,984 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:15:18,984 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:15:18,985 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:15:19,233 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:15:19,234 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:15:19,646 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:15:19,646 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:15:20,649 INFO    Thread-153:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:15:20,649 INFO    Thread-155:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:15:20,649 INFO    Thread-158:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:15:20,650 INFO    Thread-157:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:15:20,650 INFO    Thread-162:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:15:20,650 INFO    Thread-160:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:15:20,650 INFO    Thread-161:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:15:20,650 INFO    Thread-163:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:15:20,650 INFO    Thread-165:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:15:20,650 INFO    Thread-164:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:15:21,133 INFO    Thread-154:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/c0/0c337ea11b32d9d9b0ccb56e890c3c
+2022-07-27 14:15:21,330 INFO    Thread-156:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/8a/f36b26b8a0a398cdd644b8e09702c7
+2022-07-27 14:15:21,558 INFO    Thread-159:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/8c/32402c467786e0055f97e6581e84b2
+2022-07-27 14:15:22,024 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:15:22,903 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwNTgz', 'digest': '7eb4a90e39b353c3ac3bd4aef11440bf', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwNDU0', 'versionIndex': 9}}, 'version': 'latest'}
+2022-07-27 14:15:22,903 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:15:25,552 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:15:38,128 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:15:38,129 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:15:52,693 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:15:52,694 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:15:52,694 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:15:52,694 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:15:52,694 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:15:52,695 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:15:52,695 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:15:52,696 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:15:52,696 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:15:52,696 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:15:52,696 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:15:52,697 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:15:52,799 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:15:52,942 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:15:52,943 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:15:53,370 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:15:53,804 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:15:55,160 INFO    Thread-169:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:15:55,160 INFO    Thread-171:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:15:55,160 INFO    Thread-175:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:15:55,160 INFO    Thread-174:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:15:55,160 INFO    Thread-172:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:15:55,161 INFO    Thread-176:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:15:55,161 INFO    Thread-177:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:15:55,161 INFO    Thread-178:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:15:55,161 INFO    Thread-179:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:15:55,161 INFO    Thread-167:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:15:55,631 INFO    Thread-168:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/ef/f208aa90ffccf733f62da9e5c42af2
+2022-07-27 14:15:55,866 INFO    Thread-170:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/f8/42d323d9f3cb323db9b0ec54bb53af
+2022-07-27 14:15:56,102 INFO    Thread-173:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/bb/07d548662493b8060878e41b3240cb
+2022-07-27 14:15:57,411 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwNzEz', 'digest': '9120b5cdad9306730f8deba3634c0898', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwNTgz', 'versionIndex': 10}}, 'version': 'latest'}
+2022-07-27 14:15:57,412 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:16:05,192 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:16:12,634 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:16:12,635 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:16:27,877 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:16:27,877 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:16:31,214 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:16:31,215 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:16:31,215 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:16:31,216 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:16:31,216 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:16:31,218 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:16:31,218 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:16:31,218 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:16:31,219 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:16:31,219 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:16:31,219 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:16:31,220 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:16:31,537 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:16:31,537 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:16:31,970 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:16:32,944 INFO    Thread-192:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:16:32,944 INFO    Thread-183:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:16:32,944 INFO    Thread-185:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:16:32,945 INFO    Thread-186:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:16:32,945 INFO    Thread-191:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:16:32,945 INFO    Thread-190:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:16:32,945 INFO    Thread-193:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:16:32,945 INFO    Thread-181:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:16:32,945 INFO    Thread-188:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:16:32,946 INFO    Thread-189:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:16:33,414 INFO    Thread-182:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/1f/9d1960f482fea72719dc6e3b04c645
+2022-07-27 14:16:33,641 INFO    Thread-184:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/2a/b2b16dabcac61b82ef304afda51a25
+2022-07-27 14:16:33,856 INFO    Thread-187:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/cd/1bcd4e0f0449b4c0195ffc8d5c393a
+2022-07-27 14:16:33,981 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:16:35,244 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAwODk3', 'digest': 'd372f1fcadc404df77d4d9343c7ec013', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwNzEz', 'versionIndex': 11}}, 'version': 'latest'}
+2022-07-27 14:16:43,196 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:16:43,197 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:16:44,749 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:16:58,426 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:16:58,428 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:17:13,689 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:17:13,691 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:17:13,991 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:17:13,992 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:17:13,992 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:17:13,992 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:17:13,993 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:17:13,994 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:17:13,994 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:17:13,994 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:17:13,995 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:17:13,995 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:17:13,995 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:17:13,996 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:17:14,154 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:17:14,232 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:17:14,232 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:17:15,643 INFO    Thread-205:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:17:15,644 INFO    Thread-199:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:17:15,644 INFO    Thread-200:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:17:15,644 INFO    Thread-203:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:17:15,644 INFO    Thread-202:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:17:15,644 INFO    Thread-204:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:17:15,644 INFO    Thread-207:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:17:15,644 INFO    Thread-206:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:17:15,644 INFO    Thread-197:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:17:15,644 INFO    Thread-195:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:17:16,088 INFO    Thread-196:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/82/3739dcb359457e0e9d6eb7364be15c
+2022-07-27 14:17:16,162 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:17:16,311 INFO    Thread-198:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/2f/f526a8ca7f8dd51a16134b7a8ebde2
+2022-07-27 14:17:16,545 INFO    Thread-201:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/26/70069cb7ad65310b61df8a091ddad8
+2022-07-27 14:17:17,793 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAxMDY4', 'digest': '2de0c85bf8f282e10e0dc3294abfdb71', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAwODk3', 'versionIndex': 12}}, 'version': 'latest'}
+2022-07-27 14:17:24,250 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:17:28,940 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:17:28,941 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:17:44,165 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:17:44,166 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:17:59,400 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:17:59,401 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:18:03,248 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:18:03,249 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:18:03,250 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:18:03,250 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:18:03,250 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:18:03,252 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:18:03,252 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:18:03,252 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:18:03,252 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:18:03,253 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:18:03,253 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:18:03,253 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:18:03,362 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:18:03,487 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:18:03,487 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:18:04,794 INFO    Thread-211:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:18:04,794 INFO    Thread-209:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:18:04,794 INFO    Thread-214:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:18:04,794 INFO    Thread-213:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:18:04,794 INFO    Thread-216:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:18:04,794 INFO    Thread-217:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:18:04,794 INFO    Thread-219:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:18:04,794 INFO    Thread-220:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:18:04,794 INFO    Thread-218:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:18:04,794 INFO    Thread-221:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:18:05,283 INFO    Thread-210:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/14/fada6cd7891d4d81c90da5384fa217
+2022-07-27 14:18:05,490 INFO    Thread-212:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/ac/a0781c44096dc3a43932244f1035b7
+2022-07-27 14:18:05,718 INFO    Thread-215:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/41/7408fc49ceac70aaebad7aa8c38a00
+2022-07-27 14:18:06,374 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:18:07,148 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAxMjMz', 'digest': '144d6db278b906e4a402b16717118a8c', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAxMDY4', 'versionIndex': 13}}, 'version': 'latest'}
+2022-07-27 14:18:07,148 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:18:14,676 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:18:14,677 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:18:29,923 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:18:29,924 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:18:43,081 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:18:45,135 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:18:45,135 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:18:53,961 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:18:53,962 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:18:53,962 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:18:53,963 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:18:53,963 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:18:53,964 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:18:53,964 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:18:53,964 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:18:53,965 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:18:53,965 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:18:53,965 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:18:53,965 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:18:54,243 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:18:54,243 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:18:54,566 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:18:55,570 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:18:55,678 INFO    Thread-223:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:18:55,679 INFO    Thread-227:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:18:55,679 INFO    Thread-233:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:18:55,679 INFO    Thread-232:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:18:55,679 INFO    Thread-228:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:18:55,679 INFO    Thread-234:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:18:55,679 INFO    Thread-230:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:18:55,679 INFO    Thread-231:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:18:55,679 INFO    Thread-235:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:18:55,680 INFO    Thread-225:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:18:56,169 INFO    Thread-224:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/d6/ee82e61c6d8a3ea624ccf1be2a18a7
+2022-07-27 14:18:56,362 INFO    Thread-226:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/ab/f72099b9a2418c3c041b453c37512c
+2022-07-27 14:18:56,595 INFO    Thread-229:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/a8/b12a87945e057f6d861a5e70d532a8
+2022-07-27 14:18:57,724 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAxNDYz', 'digest': '52b5a5dfc662defdf95fed3c45190379', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAxMjMz', 'versionIndex': 14}}, 'version': 'latest'}
+2022-07-27 14:19:00,360 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:19:00,361 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:19:15,583 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:19:15,584 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:19:22,757 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:19:30,833 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:19:30,834 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:19:46,104 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:19:46,105 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:19:48,277 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:19:48,278 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:19:48,278 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:19:48,278 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:19:48,278 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:19:48,279 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:19:48,280 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:19:48,280 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:19:48,280 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:19:48,280 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:19:48,280 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:19:48,281 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:19:48,519 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:19:48,519 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:19:48,786 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:19:49,792 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:19:50,296 INFO    Thread-237:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:19:50,296 INFO    Thread-239:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:19:50,296 INFO    Thread-241:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:19:50,297 INFO    Thread-248:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:19:50,297 INFO    Thread-245:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:19:50,297 INFO    Thread-249:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:19:50,297 INFO    Thread-247:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:19:50,297 INFO    Thread-244:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:19:50,297 INFO    Thread-246:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:19:50,297 INFO    Thread-242:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:19:50,739 INFO    Thread-238:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/14/f03d9934722badc0e44ab12223d52a
+2022-07-27 14:19:50,976 INFO    Thread-240:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/fc/3cedc61e1821d3fe088bcf99d23866
+2022-07-27 14:19:51,228 INFO    Thread-243:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/4c/1e4d9b6d1ff3e6adaaa4c77de0f3a9
+2022-07-27 14:19:52,502 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAxNjc4', 'digest': 'ed1d43b14a79885e2755e8a53af0fcca', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAxNDYz', 'versionIndex': 15}}, 'version': 'latest'}
+2022-07-27 14:20:01,347 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:20:01,349 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:20:02,393 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:20:16,605 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:20:16,606 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:20:31,855 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:20:31,855 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:20:39,438 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:20:39,439 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:20:39,439 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:20:39,439 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:20:39,440 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:20:39,441 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:20:39,442 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:20:39,442 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:20:39,443 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:20:39,443 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:20:39,443 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:20:39,443 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:20:39,675 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:20:39,675 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:20:40,023 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:20:40,023 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:20:41,452 INFO    Thread-251:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:20:41,452 INFO    Thread-255:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:20:41,453 INFO    Thread-256:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:20:41,453 INFO    Thread-258:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:20:41,453 INFO    Thread-259:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:20:41,453 INFO    Thread-261:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:20:41,453 INFO    Thread-253:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:20:41,453 INFO    Thread-260:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:20:41,453 INFO    Thread-263:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:20:41,453 INFO    Thread-262:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:20:41,935 INFO    Thread-252:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/8e/9bc89ee8e201a91964f16ce276d600
+2022-07-27 14:20:42,164 INFO    Thread-254:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/a1/bb7d959a5876fdabc1e7c9e0d14d1a
+2022-07-27 14:20:42,395 INFO    Thread-257:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/1e/3c4a8a772e80a79b75de91f739e1f0
+2022-07-27 14:20:43,547 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAxODg3', 'digest': 'b69a3f7991e5a7817f7e8ca073b7c11e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAxNjc4', 'versionIndex': 16}}, 'version': 'latest'}
+2022-07-27 14:20:43,547 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:20:47,083 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:20:47,084 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:21:02,346 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:21:02,348 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:21:17,620 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:21:17,620 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:21:21,479 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:21:31,685 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:21:31,686 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:21:31,686 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:21:31,686 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:21:31,687 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:21:31,688 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:21:31,688 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:21:31,688 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:21:31,689 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:21:31,689 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:21:31,689 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:21:31,689 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:21:32,012 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:21:32,012 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:21:32,280 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:21:33,009 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:21:33,263 INFO    Thread-277:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:21:33,263 INFO    Thread-267:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:21:33,263 INFO    Thread-270:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:21:33,263 INFO    Thread-269:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:21:33,263 INFO    Thread-273:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:21:33,263 INFO    Thread-272:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:21:33,263 INFO    Thread-274:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:21:33,263 INFO    Thread-275:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:21:33,263 INFO    Thread-276:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:21:33,263 INFO    Thread-265:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:21:33,714 INFO    Thread-266:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/c3/f5df45e2bbb01ba870a03754ddb627
+2022-07-27 14:21:33,938 INFO    Thread-268:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/b4/8eed9172671e5ff3dab7763f0b653c
+2022-07-27 14:21:34,168 INFO    Thread-271:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/0b/51cb64bc3132a4e4f4d84f3dca05e0
+2022-07-27 14:21:34,291 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:21:35,394 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAyMDc3', 'digest': '9b0e7ea56fc9c5f53914b829b0a7968d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAxODg3', 'versionIndex': 17}}, 'version': 'latest'}
+2022-07-27 14:21:35,394 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:21:50,754 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:21:50,756 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:22:00,755 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:22:05,991 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:22:05,992 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:22:21,350 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:22:21,351 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:22:21,983 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:22:21,983 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:22:21,984 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:22:21,984 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:22:21,984 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:22:21,985 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:22:21,985 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:22:21,985 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:22:21,986 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:22:21,986 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:22:21,986 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:22:21,986 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:22:22,221 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:22:22,222 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:22:22,528 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:22:22,528 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:22:24,356 INFO    Thread-279:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:22:24,356 INFO    Thread-281:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:22:24,356 INFO    Thread-283:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:22:24,356 INFO    Thread-284:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:22:24,356 INFO    Thread-286:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:22:24,356 INFO    Thread-288:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:22:24,356 INFO    Thread-289:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:22:24,356 INFO    Thread-287:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:22:24,357 INFO    Thread-290:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:22:24,357 INFO    Thread-291:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:22:24,861 INFO    Thread-280:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/a6/7e9c5c2b19a81561f289b30fc21f60
+2022-07-27 14:22:25,053 INFO    Thread-282:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/e7/85dfd35d4723a25945b3b9709e8d9a
+2022-07-27 14:22:25,263 INFO    Thread-285:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/cf/ef2eaca988a695e233075d474edb47
+2022-07-27 14:22:26,610 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAyMjc1', 'digest': '1ad2cf5fcb356cfc9d19a0f06af4430f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAyMDc3', 'versionIndex': 18}}, 'version': 'latest'}
+2022-07-27 14:22:36,569 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:22:36,570 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:22:40,207 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:22:51,800 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:22:51,801 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:23:07,059 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:23:07,060 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:23:14,988 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:23:14,989 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:23:14,990 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:23:14,990 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:23:14,991 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:23:14,993 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:23:14,993 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:23:14,993 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:23:14,993 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:23:14,994 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:23:14,994 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:23:14,995 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:23:15,232 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:23:15,232 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:23:15,782 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:23:16,783 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:23:16,988 INFO    Thread-298:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:23:16,988 INFO    Thread-302:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:23:16,989 INFO    Thread-301:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:23:16,989 INFO    Thread-305:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:23:16,989 INFO    Thread-303:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:23:16,989 INFO    Thread-304:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:23:16,989 INFO    Thread-297:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:23:16,989 INFO    Thread-293:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:23:16,989 INFO    Thread-300:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:23:16,990 INFO    Thread-295:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:23:17,444 INFO    Thread-294:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/d7/ed18bf3db83d707a4fd0e0ad8f07f1
+2022-07-27 14:23:17,705 INFO    Thread-296:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/30/e69c936bcbcbd2b2f0ed88699feda6
+2022-07-27 14:23:17,934 INFO    Thread-299:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/67/36da1fb2d408c9f342f104744f4932
+2022-07-27 14:23:19,144 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAyNDk5', 'digest': 'acee97d2503219bc366acb882c730773', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAyMjc1', 'versionIndex': 19}}, 'version': 'latest'}
+2022-07-27 14:23:19,938 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:23:22,298 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:23:22,299 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:23:37,529 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:23:37,530 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:23:52,757 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:23:52,758 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:23:59,961 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:24:07,987 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:24:07,988 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:24:08,391 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:24:08,392 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:24:08,392 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:24:08,392 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:24:08,393 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:24:08,393 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:24:08,394 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:24:08,394 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:24:08,394 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:24:08,394 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:24:08,394 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:24:08,395 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:24:08,669 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:24:08,669 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:24:09,013 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:24:09,933 INFO    Thread-307:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:24:09,934 INFO    Thread-311:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:24:09,934 INFO    Thread-312:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:24:09,934 INFO    Thread-314:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:24:09,934 INFO    Thread-315:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:24:09,934 INFO    Thread-317:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:24:09,934 INFO    Thread-318:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:24:09,934 INFO    Thread-319:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:24:09,935 INFO    Thread-316:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:24:09,936 INFO    Thread-309:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:24:10,454 INFO    Thread-308:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/04/63c642eadd0a82823cfc5dbc52b22b
+2022-07-27 14:24:10,664 INFO    Thread-310:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/dc/47b3321f726435ba93b187ed6cb198
+2022-07-27 14:24:10,877 INFO    Thread-313:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/54/1a65a26eca8a004d4f81adeb03ca8e
+2022-07-27 14:24:11,021 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:24:12,182 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAyNjkx', 'digest': '59edce95180730726ccc0aeac3b0a3a7', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAyNDk5', 'versionIndex': 20}}, 'version': 'latest'}
+2022-07-27 14:24:23,223 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:24:23,225 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:24:38,461 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:24:38,462 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:24:39,531 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:24:54,018 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:24:54,019 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:24:59,253 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:24:59,254 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:24:59,254 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:24:59,254 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:24:59,255 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:24:59,255 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:24:59,256 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:24:59,256 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:24:59,256 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:24:59,256 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:24:59,256 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:24:59,257 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:24:59,496 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:24:59,496 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:25:00,233 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:25:01,127 INFO    Thread-321:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:25:01,128 INFO    Thread-323:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:25:01,128 INFO    Thread-325:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:25:01,128 INFO    Thread-326:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:25:01,128 INFO    Thread-329:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:25:01,128 INFO    Thread-328:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:25:01,128 INFO    Thread-330:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:25:01,128 INFO    Thread-332:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:25:01,128 INFO    Thread-333:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:25:01,128 INFO    Thread-331:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:25:01,238 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:25:01,569 INFO    Thread-322:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/27/e1b989586a8103607e05f4130386da
+2022-07-27 14:25:01,808 INFO    Thread-324:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/37/cb04baa38f0faf10a51acc4a1995f9
+2022-07-27 14:25:02,029 INFO    Thread-327:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/71/2ebca01567ee562089e8c054afeb5e
+2022-07-27 14:25:03,192 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAyOTA0', 'digest': 'f275c415010d6e1ffa12a45d68f89e0a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAyNjkx', 'versionIndex': 21}}, 'version': 'latest'}
+2022-07-27 14:25:09,438 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:25:09,438 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:25:19,134 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:25:24,705 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:25:24,705 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:25:39,929 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:25:39,930 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:25:50,982 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:25:50,983 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:25:50,983 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:25:50,983 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:25:50,984 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:25:50,985 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:25:50,986 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:25:50,986 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:25:50,987 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:25:50,987 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:25:50,987 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:25:50,987 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:25:51,225 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:25:51,226 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:25:51,453 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:25:52,633 INFO    Thread-343:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:25:52,633 INFO    Thread-337:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:25:52,633 INFO    Thread-339:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:25:52,633 INFO    Thread-340:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:25:52,633 INFO    Thread-342:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:25:52,633 INFO    Thread-344:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:25:52,633 INFO    Thread-347:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:25:52,633 INFO    Thread-335:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:25:52,633 INFO    Thread-346:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:25:52,633 INFO    Thread-345:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:25:53,076 INFO    Thread-336:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/b6/4c663a451dea27797e745fa0f576c4
+2022-07-27 14:25:53,330 INFO    Thread-338:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/ff/3d7f335993b1697a5f593072788e90
+2022-07-27 14:25:53,464 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:25:53,537 INFO    Thread-341:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/80/aaa4f51fc746039706ec7812159800
+2022-07-27 14:25:54,888 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAzMDk2', 'digest': '87711a9a4d657225f50c850acf1befd5', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAyOTA0', 'versionIndex': 22}}, 'version': 'latest'}
+2022-07-27 14:25:55,164 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:25:55,165 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:25:58,592 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:26:10,381 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:26:10,382 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:26:25,628 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:26:25,629 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:26:38,021 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:26:40,847 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:26:40,848 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:26:43,454 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:26:43,455 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:26:43,455 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:26:43,455 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:26:43,455 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:26:43,456 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:26:43,457 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:26:43,457 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:26:43,457 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:26:43,457 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:26:43,457 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:26:43,458 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:26:43,688 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:26:43,701 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:26:43,701 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:26:44,693 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:26:44,852 INFO    Thread-361:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:26:44,852 INFO    Thread-349:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:26:44,852 INFO    Thread-356:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:26:44,852 INFO    Thread-358:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:26:44,852 INFO    Thread-359:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:26:44,852 INFO    Thread-357:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:26:44,852 INFO    Thread-351:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:26:44,852 INFO    Thread-360:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:26:44,852 INFO    Thread-354:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:26:44,852 INFO    Thread-353:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:26:45,307 INFO    Thread-350:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/d5/8b8599fc4bf369592eca95ae1434ea
+2022-07-27 14:26:45,561 INFO    Thread-352:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/c4/630c50178634c1d6262d93224b3303
+2022-07-27 14:26:45,758 INFO    Thread-355:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/c1/0a22aceef4828bc6b0ca04c408a685
+2022-07-27 14:26:46,972 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAzMjc2', 'digest': 'bceaf9de8cf0efd11d92a0f127d5a545', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAzMDk2', 'versionIndex': 23}}, 'version': 'latest'}
+2022-07-27 14:26:56,091 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:26:56,092 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:27:11,327 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:27:11,328 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:27:17,758 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:27:26,566 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:27:26,566 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:27:35,588 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:27:35,589 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:27:35,590 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:27:35,590 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:27:35,591 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:27:35,591 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:27:35,592 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:27:35,592 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:27:35,593 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:27:35,593 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:27:35,593 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:27:35,593 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:27:35,846 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:27:35,846 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:27:35,899 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:27:36,902 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:27:37,077 INFO    Thread-363:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:27:37,078 INFO    Thread-365:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:27:37,078 INFO    Thread-367:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:27:37,078 INFO    Thread-370:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:27:37,078 INFO    Thread-368:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:27:37,078 INFO    Thread-372:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:27:37,078 INFO    Thread-374:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:27:37,078 INFO    Thread-375:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:27:37,078 INFO    Thread-373:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:27:37,078 INFO    Thread-371:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:27:37,564 INFO    Thread-364:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/64/62b24e5dd9e585c4723f3fb7c8de48
+2022-07-27 14:27:37,777 INFO    Thread-366:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/5c/ee155dd4d9b1d5fd023438b9069d5d
+2022-07-27 14:27:38,001 INFO    Thread-369:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/05/2313db7adc7f876e439ccc69891f47
+2022-07-27 14:27:39,431 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAzNDU3', 'digest': 'd7cf36bf4d231b917130803f99aa935f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAzMjc2', 'versionIndex': 24}}, 'version': 'latest'}
+2022-07-27 14:27:41,791 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:27:41,792 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:27:57,034 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:27:57,035 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:27:57,409 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:28:12,265 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-27 14:28:12,267 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: stop_status
+2022-07-27 14:28:25,652 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:28:25,653 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:28:25,653 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:28:25,654 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:28:25,654 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-27 14:28:25,655 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:28:25,655 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:28:25,656 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:28:25,656 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:28:25,656 DEBUG   SenderThread:97082 [sender.py:send():235] send: history
+2022-07-27 14:28:25,656 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:28:25,657 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:28:25,924 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-27 14:28:25,924 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: log_artifact
+2022-07-27 14:28:26,111 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:28:27,117 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:28:27,766 INFO    Thread-377:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/98/6c31607283ccfa4c84dbb220b98382
+2022-07-27 14:28:27,767 INFO    Thread-379:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-27 14:28:27,767 INFO    Thread-381:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/12/65692a22650cfc1cda8306522f91af
+2022-07-27 14:28:27,767 INFO    Thread-382:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-27 14:28:27,767 INFO    Thread-384:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-27 14:28:27,767 INFO    Thread-386:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:28:27,767 INFO    Thread-387:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/dc/8fba9e16469a58d8a2884032a6e56a
+2022-07-27 14:28:27,767 INFO    Thread-388:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-27 14:28:27,767 INFO    Thread-389:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-27 14:28:27,767 INFO    Thread-385:97082 [upload_job.py:push():87] Skipped uploading /Users/anis/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-27 14:28:27,974 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:28,122 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:28:28,208 INFO    Thread-378:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/a5/2bbcb38dfba118172e6f8d4eeee0a7
+2022-07-27 14:28:28,449 INFO    Thread-380:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/ab/e6bee5cba3e8a3b853d00e7737fbf6
+2022-07-27 14:28:28,659 INFO    Thread-383:97082 [upload_job.py:push():90] Uploaded file /Users/anis/.cache/wandb/artifacts/obj/md5/e6/227165e78983f3e266703a542f7c38
+2022-07-27 14:28:29,915 INFO    SenderThread:97082 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_3203pt67 - {'id': 'QXJ0aWZhY3Q6MTYzNzAzNjQ5', 'digest': '250ab027da4961a7b1472f12f614511e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODMxNTYz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYzNzAzNDU3', 'versionIndex': 25}}, 'version': 'latest'}
+2022-07-27 14:28:29,916 DEBUG   SenderThread:97082 [sender.py:send():235] send: telemetry
+2022-07-27 14:28:29,916 DEBUG   SenderThread:97082 [sender.py:send():235] send: telemetry
+2022-07-27 14:28:29,916 DEBUG   SenderThread:97082 [sender.py:send():235] send: exit
+2022-07-27 14:28:29,916 INFO    SenderThread:97082 [sender.py:send_exit():371] handling exit code: 0
+2022-07-27 14:28:29,916 INFO    SenderThread:97082 [sender.py:send_exit():373] handling runtime: 1056
+2022-07-27 14:28:29,917 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:28:29,918 INFO    SenderThread:97082 [sender.py:send_exit():379] send defer
+2022-07-27 14:28:29,918 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:29,919 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:29,920 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 0
+2022-07-27 14:28:29,920 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:29,920 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-07-27 14:28:29,920 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 1
+2022-07-27 14:28:29,920 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:29,920 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 1
+2022-07-27 14:28:30,132 INFO    Thread-7  :97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:28:30,399 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:30,399 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:30,400 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-07-27 14:28:30,400 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 2
+2022-07-27 14:28:30,400 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:30,400 DEBUG   SenderThread:97082 [sender.py:send():235] send: stats
+2022-07-27 14:28:30,400 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:30,400 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 2
+2022-07-27 14:28:30,400 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:30,400 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-07-27 14:28:30,400 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 3
+2022-07-27 14:28:30,401 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:30,401 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 3
+2022-07-27 14:28:30,401 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:30,401 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-07-27 14:28:30,401 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 4
+2022-07-27 14:28:30,402 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:30,402 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 4
+2022-07-27 14:28:30,402 DEBUG   SenderThread:97082 [sender.py:send():235] send: summary
+2022-07-27 14:28:30,403 INFO    SenderThread:97082 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-27 14:28:30,403 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:30,403 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-07-27 14:28:30,403 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 5
+2022-07-27 14:28:30,403 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:30,403 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 5
+2022-07-27 14:28:30,403 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:30,403 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-07-27 14:28:30,504 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:30,677 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 6
+2022-07-27 14:28:30,678 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:30,678 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:30,678 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 6
+2022-07-27 14:28:30,679 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:30,679 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-07-27 14:28:30,679 INFO    SenderThread:97082 [dir_watcher.py:finish():336] shutting down directory watcher
+2022-07-27 14:28:30,785 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,138 INFO    SenderThread:97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:28:31,139 INFO    SenderThread:97082 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/config.yaml
+2022-07-27 14:28:31,140 INFO    SenderThread:97082 [dir_watcher.py:finish():366] scan: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files
+2022-07-27 14:28:31,141 INFO    SenderThread:97082 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/requirements.txt requirements.txt
+2022-07-27 14:28:31,141 INFO    SenderThread:97082 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log output.log
+2022-07-27 14:28:31,141 INFO    SenderThread:97082 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/config.yaml config.yaml
+2022-07-27 14:28:31,148 INFO    SenderThread:97082 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json wandb-summary.json
+2022-07-27 14:28:31,153 INFO    SenderThread:97082 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/conda-environment.yaml conda-environment.yaml
+2022-07-27 14:28:31,157 INFO    SenderThread:97082 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-metadata.json wandb-metadata.json
+2022-07-27 14:28:31,157 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 7
+2022-07-27 14:28:31,157 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,159 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:31,159 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 7
+2022-07-27 14:28:31,160 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:31,160 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-07-27 14:28:31,160 INFO    SenderThread:97082 [file_pusher.py:finish():145] shutting down file pusher
+2022-07-27 14:28:31,265 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,265 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,371 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,371 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,475 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,476 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,578 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,578 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,683 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,683 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,789 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,789 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,891 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,891 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:31,994 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:31,995 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:32,070 INFO    Thread-392:97082 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/config.yaml
+2022-07-27 14:28:32,072 INFO    Thread-391:97082 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/output.log
+2022-07-27 14:28:32,072 INFO    Thread-390:97082 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/requirements.txt
+2022-07-27 14:28:32,074 INFO    Thread-393:97082 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/files/wandb-summary.json
+2022-07-27 14:28:32,102 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:32,102 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:32,208 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:32,208 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:32,275 INFO    Thread-6  :97082 [sender.py:transition_state():392] send defer: 8
+2022-07-27 14:28:32,276 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:32,276 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 8
+2022-07-27 14:28:32,276 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:32,276 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-07-27 14:28:32,315 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:32,938 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 9
+2022-07-27 14:28:32,938 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:32,939 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:32,939 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 9
+2022-07-27 14:28:32,939 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:32,939 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-07-27 14:28:32,941 INFO    SenderThread:97082 [sender.py:transition_state():392] send defer: 10
+2022-07-27 14:28:32,942 DEBUG   SenderThread:97082 [sender.py:send():235] send: final
+2022-07-27 14:28:32,942 DEBUG   SenderThread:97082 [sender.py:send():235] send: footer
+2022-07-27 14:28:32,942 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: defer
+2022-07-27 14:28:32,942 INFO    HandlerThread:97082 [handler.py:handle_request_defer():164] handle defer: 10
+2022-07-27 14:28:32,942 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: defer
+2022-07-27 14:28:32,942 INFO    SenderThread:97082 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-07-27 14:28:33,045 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-27 14:28:33,045 DEBUG   SenderThread:97082 [sender.py:send_request():249] send_request: poll_exit
+2022-07-27 14:28:33,046 INFO    SenderThread:97082 [file_pusher.py:join():150] waiting for file pusher
+2022-07-27 14:28:33,376 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: sampled_history
+2022-07-27 14:28:33,380 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: get_summary
+2022-07-27 14:28:33,381 DEBUG   HandlerThread:97082 [handler.py:handle_request():141] handle_request: shutdown
+2022-07-27 14:28:33,381 INFO    HandlerThread:97082 [handler.py:finish():806] shutting down handler
+2022-07-27 14:28:33,947 INFO    WriterThread:97082 [datastore.py:close():279] close: /Users/anis/test_labnbook/math_ner/correct_ner/wandb/run-20220727_141050-3203pt67/run-3203pt67.wandb
+2022-07-27 14:28:34,271 INFO    SenderThread:97082 [sender.py:finish():1111] shutting down sender
+2022-07-27 14:28:34,272 INFO    SenderThread:97082 [file_pusher.py:finish():145] shutting down file pusher
+2022-07-27 14:28:34,272 INFO    SenderThread:97082 [file_pusher.py:join():150] waiting for file pusher
+2022-07-27 14:28:34,331 INFO    MainThread:97082 [internal.py:handle_exit():80] Internal process exited

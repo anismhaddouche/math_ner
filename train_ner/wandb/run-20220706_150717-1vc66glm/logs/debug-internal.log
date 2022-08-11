@@ -1,0 +1,708 @@
+2022-07-06 15:07:18,803 INFO    MainThread:34727 [internal.py:wandb_internal():90] W&B internal server running at pid: 34727, started at: 2022-07-06 15:07:18.803260
+2022-07-06 15:07:18,804 INFO    WriterThread:34727 [datastore.py:open_for_write():75] open: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/run-1vc66glm.wandb
+2022-07-06 15:07:18,805 DEBUG   SenderThread:34727 [sender.py:send():235] send: header
+2022-07-06 15:07:18,805 DEBUG   SenderThread:34727 [sender.py:send():235] send: run
+2022-07-06 15:07:19,262 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: check_version
+2022-07-06 15:07:19,268 INFO    SenderThread:34727 [dir_watcher.py:__init__():205] watching files in: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files
+2022-07-06 15:07:19,268 INFO    SenderThread:34727 [sender.py:_start_run_threads():812] run started: 1vc66glm with start time 1657112837
+2022-07-06 15:07:19,268 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:19,268 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:19,269 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: check_version
+2022-07-06 15:07:19,882 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: run_start
+2022-07-06 15:07:19,883 DEBUG   HandlerThread:34727 [meta.py:__init__():35] meta init
+2022-07-06 15:07:19,883 DEBUG   HandlerThread:34727 [meta.py:__init__():49] meta init done
+2022-07-06 15:07:19,886 DEBUG   HandlerThread:34727 [meta.py:probe():209] probe
+2022-07-06 15:07:19,890 DEBUG   HandlerThread:34727 [meta.py:_setup_git():199] setup git
+2022-07-06 15:07:19,919 DEBUG   HandlerThread:34727 [meta.py:_setup_git():206] setup git done
+2022-07-06 15:07:19,919 DEBUG   HandlerThread:34727 [meta.py:_save_pip():53] save pip
+2022-07-06 15:07:19,920 DEBUG   HandlerThread:34727 [meta.py:_save_pip():67] save pip done
+2022-07-06 15:07:19,920 DEBUG   HandlerThread:34727 [meta.py:_save_conda():74] save conda
+2022-07-06 15:07:20,275 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:07:20,275 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/requirements.txt
+2022-07-06 15:07:20,275 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/conda-environment.yaml
+2022-07-06 15:07:20,678 DEBUG   HandlerThread:34727 [meta.py:_save_conda():84] save conda done
+2022-07-06 15:07:20,678 DEBUG   HandlerThread:34727 [meta.py:probe():247] probe done
+2022-07-06 15:07:20,682 DEBUG   SenderThread:34727 [sender.py:send():235] send: telemetry
+2022-07-06 15:07:20,682 DEBUG   SenderThread:34727 [sender.py:send():235] send: files
+2022-07-06 15:07:20,682 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2022-07-06 15:07:20,685 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:07:20,686 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:07:21,034 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-06 15:07:21,040 DEBUG   SenderThread:34727 [sender.py:send():235] send: telemetry
+2022-07-06 15:07:21,040 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: log_artifact
+2022-07-06 15:07:21,274 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:07:21,274 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-metadata.json
+2022-07-06 15:07:21,715 INFO    Thread-11 :34727 [upload_job.py:push():132] Uploaded file /tmp/tmpm0tlqrgywandb/32rcgyqu-wandb-metadata.json
+2022-07-06 15:07:23,280 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:07:24,158 INFO    Thread-13 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/59/cca2055176bf7982d0043cbd95706a
+2022-07-06 15:07:24,326 INFO    Thread-14 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/23/aa0761645547a1361366f5286e10a8
+2022-07-06 15:07:27,042 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:27,044 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:27,045 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:27,113 INFO    SenderThread:34727 [sender.py:send_request_log_artifact():1006] logged artifact dataset - {'id': 'QXJ0aWZhY3Q6MTUzNjQ3NDEw', 'digest': '8fcf2e9c2b5b099ea68c9fb655087192', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNDQyNjc4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTUzNTYxNjAy', 'versionIndex': 7}}, 'version': 'latest'}
+2022-07-06 15:07:27,113 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:27,113 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:27,114 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:27,114 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:27,114 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:27,115 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:27,115 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:27,115 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:27,115 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:27,300 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:07:29,307 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:07:36,053 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:07:36,054 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:07:43,187 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:43,188 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:43,189 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:43,189 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:43,190 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:43,191 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:43,191 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:43,191 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:43,192 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:43,192 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:43,192 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:43,193 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:43,373 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:07:45,374 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:07:50,400 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/config.yaml
+2022-07-06 15:07:51,296 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:07:51,296 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:07:56,728 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:07:59,456 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:59,458 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:59,458 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:59,458 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:59,460 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:07:59,461 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:59,461 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:59,461 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:59,461 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:07:59,461 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:07:59,462 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:07:59,462 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:00,448 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:08:01,450 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:08:06,534 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:08:06,535 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:08:15,661 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:15,662 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:15,662 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:15,662 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:15,663 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:15,664 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:15,664 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:15,665 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:15,665 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:15,665 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:15,665 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:15,666 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:16,530 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:08:17,535 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:08:21,785 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:08:21,785 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:08:32,552 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:32,554 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:32,555 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:32,555 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:32,556 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:32,557 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:32,557 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:32,557 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:32,557 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:32,557 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:32,558 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:32,558 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:32,605 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:08:35,617 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:08:35,930 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:08:37,077 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:08:37,077 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:08:49,776 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:49,778 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:49,778 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:49,779 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:49,779 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:08:49,780 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:49,780 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:49,781 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:49,781 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:49,781 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:08:49,781 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:08:49,781 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:08:50,047 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-06 15:08:50,048 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: log_artifact
+2022-07-06 15:08:50,685 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:08:51,691 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:08:52,346 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:08:53,109 INFO    Thread-17 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/f2/d13e36ca78a5b33bc790a9c2dd2ec9
+2022-07-06 15:08:53,219 INFO    Thread-20 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/1c/284c3d0b0b79e01d162d8cd1856d91
+2022-07-06 15:08:53,222 INFO    Thread-31 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-06 15:08:53,239 INFO    Thread-18 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-06 15:08:53,252 INFO    Thread-21 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/55/28fddcd83aec91192f1e578e96bbe8
+2022-07-06 15:08:53,253 INFO    Thread-24 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-06 15:08:53,262 INFO    Thread-23 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/ec/4e850454b505d2fb225f1935c04584
+2022-07-06 15:08:53,267 INFO    Thread-16 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/ae/e33e57951ae154d50ef9bd108923db
+2022-07-06 15:08:53,293 INFO    Thread-27 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:08:53,329 INFO    Thread-30 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-06 15:08:53,393 INFO    Thread-26 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-06 15:08:53,450 INFO    Thread-28 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:08:53,476 INFO    Thread-19 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/34/75ad9d57532f08df6b36ab570f1ccb
+2022-07-06 15:08:53,626 INFO    Thread-29 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/74/71273040a049018a55adf29b91ed56
+2022-07-06 15:08:53,795 INFO    Thread-25 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/53/e355b284b7abb7744bd2b7df1f149d
+2022-07-06 15:08:53,799 INFO    Thread-22 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/ff/ae68c6d058e6b7a6ab7a229816d90b
+2022-07-06 15:08:55,089 INFO    SenderThread:34727 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_1vc66glm - {'id': 'QXJ0aWZhY3Q6MTUzNjQ4MDE4', 'digest': '1d177b2ac7f51baf63cd41e2d978e6c2', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNzQ3MzYw', 'latestArtifact': None}, 'version': 'latest'}
+2022-07-06 15:08:55,089 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:09:08,610 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:08,611 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:08,611 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:08,612 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:08,612 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:08,613 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:08,613 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:08,613 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:08,613 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:08,613 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:08,613 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:08,614 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:08,777 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:09:09,783 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:09:10,319 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:09:10,319 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:09:15,231 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:09:25,562 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:09:25,563 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:09:26,489 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:26,491 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:26,491 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:26,491 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:26,492 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:26,493 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:26,493 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:26,494 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:26,494 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:26,494 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:26,494 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:26,494 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:26,853 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:09:27,857 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:09:40,783 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:09:40,784 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:09:45,351 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:45,353 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:45,353 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:45,353 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:45,354 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:09:45,355 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:45,355 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:45,355 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:45,355 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:45,356 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:09:45,356 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:09:45,356 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:09:45,946 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:09:47,956 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:09:54,652 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:09:56,005 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:09:56,006 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:10:06,202 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:06,203 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:06,203 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:06,203 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:06,204 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:06,205 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:06,205 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:06,205 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:06,205 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:06,205 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:06,205 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:06,206 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:07,040 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:10:08,046 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:10:11,267 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:10:11,268 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:10:26,543 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:10:26,543 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:10:27,487 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:27,489 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:27,489 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:27,489 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:27,489 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:27,491 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:27,491 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:27,491 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:27,492 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:27,492 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:27,492 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:27,493 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:27,724 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-06 15:10:27,724 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: log_artifact
+2022-07-06 15:10:28,139 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:10:28,992 INFO    Thread-33 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ae/e33e57951ae154d50ef9bd108923db
+2022-07-06 15:10:28,992 INFO    Thread-35 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-06 15:10:28,992 INFO    Thread-38 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/55/28fddcd83aec91192f1e578e96bbe8
+2022-07-06 15:10:28,992 INFO    Thread-37 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/1c/284c3d0b0b79e01d162d8cd1856d91
+2022-07-06 15:10:28,992 INFO    Thread-40 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ec/4e850454b505d2fb225f1935c04584
+2022-07-06 15:10:28,992 INFO    Thread-39 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ff/ae68c6d058e6b7a6ab7a229816d90b
+2022-07-06 15:10:28,992 INFO    Thread-41 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-06 15:10:28,992 INFO    Thread-42 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/53/e355b284b7abb7744bd2b7df1f149d
+2022-07-06 15:10:28,992 INFO    Thread-43 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-06 15:10:28,992 INFO    Thread-44 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:10:28,992 INFO    Thread-45 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:10:28,993 INFO    Thread-46 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/74/71273040a049018a55adf29b91ed56
+2022-07-06 15:10:28,993 INFO    Thread-48 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-06 15:10:28,993 INFO    Thread-47 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-06 15:10:29,501 INFO    Thread-34 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/85/d843ed052eb07712d6c9a3f516ca7c
+2022-07-06 15:10:29,661 INFO    Thread-36 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/b7/942dc436182b88945fb7cf9d85da3e
+2022-07-06 15:10:30,146 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:10:31,043 INFO    SenderThread:34727 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_1vc66glm - {'id': 'QXJ0aWZhY3Q6MTUzNjQ4NjM2', 'digest': '83eb2bf98ca9201b22672cc55dd71be5', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNzQ3MzYw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTUzNjQ4MDE4', 'versionIndex': 0}}, 'version': 'latest'}
+2022-07-06 15:10:33,903 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:10:41,762 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:10:41,762 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:10:50,792 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:50,793 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:50,794 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:50,794 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:50,794 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:10:50,795 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:50,795 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:50,795 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:50,795 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:50,796 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:10:50,796 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:10:50,796 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:10:51,245 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:10:52,251 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:10:57,009 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:10:57,010 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:11:12,257 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:11:12,258 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:11:13,715 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:11:17,830 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:11:17,831 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:11:17,831 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:11:17,831 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:11:17,831 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:11:17,832 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:11:17,832 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:11:17,832 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:11:17,833 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:11:17,833 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:11:17,833 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:11:17,833 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:11:18,370 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:11:20,380 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:11:27,534 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:11:27,535 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:11:42,855 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:11:42,856 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:11:46,349 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:11:46,350 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:11:46,350 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:11:46,350 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:11:46,351 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:11:46,353 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:11:46,353 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:11:46,353 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:11:46,354 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:11:46,354 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:11:46,354 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:11:46,354 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:11:46,511 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:11:48,522 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:11:53,498 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:11:58,092 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:11:58,092 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:12:13,343 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:12:13,343 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:12:17,674 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:12:17,675 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:12:17,675 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:12:17,676 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:12:17,676 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:12:17,677 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:12:17,677 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:12:17,677 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:12:17,677 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:12:17,678 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:12:17,678 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:12:17,678 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:12:18,658 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:12:20,667 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:12:28,565 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:12:28,565 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:12:32,868 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:12:43,810 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:12:43,810 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:12:53,136 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:12:53,137 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:12:53,137 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:12:53,138 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:12:53,139 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:12:53,140 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:12:53,140 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:12:53,141 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:12:53,142 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:12:53,142 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:12:53,142 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:12:53,145 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:12:53,390 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-06 15:12:53,390 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: log_artifact
+2022-07-06 15:12:53,807 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:12:53,807 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:12:54,705 INFO    Thread-61 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:12:54,705 INFO    Thread-52 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-06 15:12:54,705 INFO    Thread-55 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/55/28fddcd83aec91192f1e578e96bbe8
+2022-07-06 15:12:54,705 INFO    Thread-57 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ec/4e850454b505d2fb225f1935c04584
+2022-07-06 15:12:54,705 INFO    Thread-59 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/53/e355b284b7abb7744bd2b7df1f149d
+2022-07-06 15:12:54,705 INFO    Thread-56 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ff/ae68c6d058e6b7a6ab7a229816d90b
+2022-07-06 15:12:54,705 INFO    Thread-58 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-06 15:12:54,705 INFO    Thread-60 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-06 15:12:54,706 INFO    Thread-63 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/74/71273040a049018a55adf29b91ed56
+2022-07-06 15:12:54,706 INFO    Thread-62 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:12:54,706 INFO    Thread-64 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-06 15:12:54,706 INFO    Thread-65 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-06 15:12:54,706 INFO    Thread-50 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ae/e33e57951ae154d50ef9bd108923db
+2022-07-06 15:12:54,706 INFO    Thread-54 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/1c/284c3d0b0b79e01d162d8cd1856d91
+2022-07-06 15:12:55,129 INFO    Thread-51 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/4d/2d0decd29c1db4afc0d731d574f0d3
+2022-07-06 15:12:55,361 INFO    Thread-53 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/4a/35b1a35a22be6a1c6b67ada37fb2d1
+2022-07-06 15:12:55,815 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:12:56,955 INFO    SenderThread:34727 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_1vc66glm - {'id': 'QXJ0aWZhY3Q6MTUzNjQ5NjEw', 'digest': '09140c1db61ed5d8ceef05031482a01e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNzQ3MzYw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTUzNjQ4NjM2', 'versionIndex': 1}}, 'version': 'latest'}
+2022-07-06 15:12:59,278 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:12:59,279 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:13:12,410 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:13:14,518 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:13:14,519 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:13:29,490 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:13:29,491 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:13:29,491 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:13:29,491 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:13:29,492 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:13:29,494 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:13:29,495 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:13:29,495 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:13:29,496 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:13:29,496 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:13:29,496 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:13:29,498 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:13:29,758 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:13:29,758 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:13:29,970 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:13:29,970 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:13:44,995 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:13:44,996 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:13:51,823 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:14:00,225 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:14:00,226 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:14:04,081 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:14:04,082 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:14:04,082 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:14:04,082 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:14:04,083 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:14:04,084 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:14:04,084 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:14:04,085 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:14:04,085 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:14:04,085 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:14:04,086 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:14:04,086 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:14:04,126 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:14:06,137 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:14:15,451 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:14:15,452 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:14:30,692 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:14:30,693 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:14:31,347 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:14:39,659 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:14:39,661 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:14:39,661 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:14:39,661 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:14:39,662 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:14:39,663 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:14:39,663 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:14:39,663 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:14:39,665 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:14:39,666 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:14:39,666 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:14:39,668 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:14:40,302 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:14:40,302 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:14:45,929 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:14:45,929 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:15:01,178 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:15:01,179 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:15:10,792 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:15:16,075 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:15:16,076 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:15:16,076 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:15:16,076 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:15:16,077 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:15:16,077 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:15:16,078 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:15:16,078 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:15:16,078 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:15:16,078 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:15:16,078 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:15:16,080 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:15:16,459 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:15:16,459 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:15:16,465 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:15:16,465 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:15:31,721 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:15:31,722 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:15:46,975 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:15:46,977 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:15:50,837 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:15:55,324 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:15:55,325 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:15:55,325 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:15:55,325 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:15:55,326 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:15:55,327 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:15:55,327 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:15:55,328 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:15:55,328 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:15:55,328 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:15:55,328 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:15:55,329 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:15:55,637 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:15:55,721 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-06 15:15:55,721 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: log_artifact
+2022-07-06 15:15:56,642 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:15:58,141 INFO    Thread-82 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-06 15:15:58,141 INFO    Thread-69 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-06 15:15:58,141 INFO    Thread-71 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/1c/284c3d0b0b79e01d162d8cd1856d91
+2022-07-06 15:15:58,141 INFO    Thread-73 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ff/ae68c6d058e6b7a6ab7a229816d90b
+2022-07-06 15:15:58,141 INFO    Thread-74 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ec/4e850454b505d2fb225f1935c04584
+2022-07-06 15:15:58,142 INFO    Thread-75 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-06 15:15:58,142 INFO    Thread-76 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/53/e355b284b7abb7744bd2b7df1f149d
+2022-07-06 15:15:58,142 INFO    Thread-79 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:15:58,142 INFO    Thread-77 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-06 15:15:58,142 INFO    Thread-78 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:15:58,142 INFO    Thread-80 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/74/71273040a049018a55adf29b91ed56
+2022-07-06 15:15:58,142 INFO    Thread-81 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-06 15:15:58,142 INFO    Thread-67 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ae/e33e57951ae154d50ef9bd108923db
+2022-07-06 15:15:58,143 INFO    Thread-72 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/55/28fddcd83aec91192f1e578e96bbe8
+2022-07-06 15:15:58,576 INFO    Thread-68 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/51/48709243e71baa412225b23e9cae4d
+2022-07-06 15:15:58,834 INFO    Thread-70 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/3f/ebc3fd7af8c28fc23b6c8e44e1e634
+2022-07-06 15:16:00,348 INFO    SenderThread:34727 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_1vc66glm - {'id': 'QXJ0aWZhY3Q6MTUzNjUwNjYz', 'digest': 'a51a664a4c55ba625229ab55ec49ef83', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNzQ3MzYw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTUzNjQ5NjEw', 'versionIndex': 2}}, 'version': 'latest'}
+2022-07-06 15:16:02,215 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:16:02,215 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:16:17,458 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:16:17,458 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:16:30,288 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:16:31,291 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:16:31,292 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:16:31,292 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:16:31,292 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:16:31,292 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:16:31,293 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:16:31,293 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:16:31,293 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:16:31,293 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:16:31,294 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:16:31,294 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:16:31,294 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:16:31,797 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:16:32,737 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:16:32,737 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:16:32,798 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:16:47,976 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:16:47,977 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:17:03,229 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:17:03,229 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:17:06,699 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:17:06,700 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:17:06,700 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:17:06,700 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:17:06,701 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:17:06,702 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:17:06,702 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:17:06,702 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:17:06,702 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:17:06,702 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:17:06,702 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:17:06,703 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:17:06,955 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:17:08,966 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:17:09,730 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:17:18,443 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:17:18,443 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:17:33,687 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:17:33,688 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:17:41,927 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:17:41,928 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:17:41,928 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:17:41,928 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:17:41,929 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:17:41,929 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:17:41,929 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:17:41,930 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:17:41,930 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:17:41,930 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:17:41,930 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:17:41,930 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:17:42,111 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:17:43,117 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:17:48,926 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:17:48,926 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:17:49,253 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:18:04,257 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:18:04,257 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:18:18,128 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:18:18,129 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:18:18,129 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:18:18,129 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:18:18,131 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:18:18,132 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:18:18,132 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:18:18,132 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:18:18,132 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:18:18,132 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:18:18,132 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:18:18,133 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:18:18,305 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:18:19,315 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:18:19,530 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:18:19,531 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:18:29,218 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:18:34,785 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:18:34,785 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:18:50,087 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:18:50,087 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:18:53,265 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:18:53,267 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:18:53,267 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:18:53,268 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:18:53,268 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:18:53,270 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:18:53,270 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:18:53,270 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:18:53,271 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:18:53,272 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:18:53,272 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:18:53,272 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:18:53,504 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-06 15:18:53,504 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: log_artifact
+2022-07-06 15:18:53,615 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:18:55,034 INFO    Thread-84 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ae/e33e57951ae154d50ef9bd108923db
+2022-07-06 15:18:55,034 INFO    Thread-86 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/20/8ca0abcc7a9607fbe5143367366b80
+2022-07-06 15:18:55,034 INFO    Thread-88 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/1c/284c3d0b0b79e01d162d8cd1856d91
+2022-07-06 15:18:55,034 INFO    Thread-90 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ff/ae68c6d058e6b7a6ab7a229816d90b
+2022-07-06 15:18:55,034 INFO    Thread-89 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/55/28fddcd83aec91192f1e578e96bbe8
+2022-07-06 15:18:55,034 INFO    Thread-92 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/22/e67cc3ae278cb47bca0058382d3330
+2022-07-06 15:18:55,034 INFO    Thread-91 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/ec/4e850454b505d2fb225f1935c04584
+2022-07-06 15:18:55,034 INFO    Thread-95 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:18:55,034 INFO    Thread-93 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/53/e355b284b7abb7744bd2b7df1f149d
+2022-07-06 15:18:55,034 INFO    Thread-97 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/74/71273040a049018a55adf29b91ed56
+2022-07-06 15:18:55,034 INFO    Thread-96 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/8d/39dd7eef115ea6975446ef4082951f
+2022-07-06 15:18:55,034 INFO    Thread-94 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/cd/440e84c34e4d1b823af4d7eb7184e9
+2022-07-06 15:18:55,034 INFO    Thread-99 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/03/ad37090df307326f6832abdc1062ab
+2022-07-06 15:18:55,034 INFO    Thread-98 :34727 [upload_job.py:push():87] Skipped uploading /var/root/.cache/wandb/artifacts/obj/md5/63/fd11f249a725dee9c2941b339ea037
+2022-07-06 15:18:55,450 INFO    Thread-85 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/38/d33b4e49718dbc56594a22b650d666
+2022-07-06 15:18:55,636 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:18:55,752 INFO    Thread-87 :34727 [upload_job.py:push():90] Uploaded file /var/root/.cache/wandb/artifacts/obj/md5/b1/d1c4ab2d56db13e32c4d3642299f51
+2022-07-06 15:18:57,081 INFO    SenderThread:34727 [sender.py:send_request_log_artifact():1006] logged artifact pipeline_1vc66glm - {'id': 'QXJ0aWZhY3Q6MTUzNjUxNzc3', 'digest': 'ae0f5d8e1dc0d0e64560691d8c1508d9', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNzQ3MzYw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTUzNjUwNjYz', 'versionIndex': 3}}, 'version': 'latest'}
+2022-07-06 15:19:05,343 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:19:05,343 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:19:09,633 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:19:20,593 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:19:20,594 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:19:28,319 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:19:28,320 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:19:28,321 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:19:28,321 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:19:28,322 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:19:28,323 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:19:28,323 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:19:28,323 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:19:28,324 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:19:28,324 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:19:28,324 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:19:28,324 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:19:28,914 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:19:29,919 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:19:35,827 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:19:35,828 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:19:49,974 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:19:51,076 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:19:51,077 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:20:00,733 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:20:00,734 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:20:00,734 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:20:00,735 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:20:00,736 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:20:00,737 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:20:00,737 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:20:00,737 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:20:00,738 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:20:00,738 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:20:00,738 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:20:00,738 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:20:01,183 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:20:02,189 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:20:06,313 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:20:06,313 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:20:21,551 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:20:21,552 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:20:30,188 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:20:33,724 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:20:33,725 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:20:33,725 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:20:33,725 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:20:33,726 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:20:33,727 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:20:33,727 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:20:33,727 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:20:33,728 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:20:33,728 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:20:33,728 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:20:33,728 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:20:34,446 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:20:35,449 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:20:36,784 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:20:36,784 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:20:52,011 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:20:52,011 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:21:07,254 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-06 15:21:07,254 DEBUG   SenderThread:34727 [sender.py:send_request():249] send_request: stop_status
+2022-07-06 15:21:09,863 DEBUG   SenderThread:34727 [sender.py:send():235] send: stats
+2022-07-06 15:21:10,143 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:21:10,144 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:21:10,144 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:21:10,144 DEBUG   HandlerThread:34727 [handler.py:handle_request():141] handle_request: partial_history
+2022-07-06 15:21:10,144 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:21:10,145 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:21:10,145 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:21:10,146 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:21:10,146 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:21:10,146 DEBUG   SenderThread:34727 [sender.py:send():235] send: history
+2022-07-06 15:21:10,146 DEBUG   SenderThread:34727 [sender.py:send():235] send: summary
+2022-07-06 15:21:10,146 INFO    SenderThread:34727 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-06 15:21:10,612 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:21:11,617 INFO    Thread-7  :34727 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:21:18,817 WARNING MainThread:34727 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-07-06 15:21:18,817 DEBUG   SenderThread:34727 [sender.py:send():235] send: telemetry
+2022-07-06 15:21:18,820 DEBUG   SenderThread:34727 [sender.py:send():235] send: telemetry
+2022-07-06 15:21:24,843 WARNING MainThread:34727 [internal.py:is_dead():387] Internal process exiting, parent pid 34652 disappeared
+2022-07-06 15:21:24,843 ERROR   MainThread:34727 [internal.py:wandb_internal():149] Internal process shutdown.
+2022-07-06 15:21:25,828 INFO    HandlerThread:34727 [handler.py:finish():806] shutting down handler
+2022-07-06 15:21:25,844 INFO    WriterThread:34727 [datastore.py:close():279] close: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/run-1vc66glm.wandb
+2022-07-06 15:21:25,845 INFO    SenderThread:34727 [sender.py:finish():1111] shutting down sender
+2022-07-06 15:21:25,845 INFO    SenderThread:34727 [dir_watcher.py:finish():336] shutting down directory watcher
+2022-07-06 15:21:26,666 INFO    SenderThread:34727 [dir_watcher.py:finish():366] scan: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files
+2022-07-06 15:21:26,667 INFO    SenderThread:34727 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/requirements.txt requirements.txt
+2022-07-06 15:21:26,667 INFO    SenderThread:34727 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log output.log
+2022-07-06 15:21:26,673 INFO    SenderThread:34727 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/config.yaml config.yaml
+2022-07-06 15:21:26,677 INFO    SenderThread:34727 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json wandb-summary.json
+2022-07-06 15:21:26,682 INFO    SenderThread:34727 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/conda-environment.yaml conda-environment.yaml
+2022-07-06 15:21:26,688 INFO    SenderThread:34727 [dir_watcher.py:finish():380] scan save: /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-metadata.json wandb-metadata.json
+2022-07-06 15:21:26,689 INFO    SenderThread:34727 [file_pusher.py:finish():145] shutting down file pusher
+2022-07-06 15:21:26,689 INFO    SenderThread:34727 [file_pusher.py:join():150] waiting for file pusher
+2022-07-06 15:21:27,516 INFO    Thread-103:34727 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/wandb-summary.json
+2022-07-06 15:21:27,527 INFO    Thread-100:34727 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/requirements.txt
+2022-07-06 15:21:27,539 INFO    Thread-102:34727 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/config.yaml
+2022-07-06 15:21:27,541 INFO    Thread-101:34727 [upload_job.py:push():132] Uploaded file /Users/anis/test_labnbook/math_ner/train_ner/wandb/run-20220706_150717-1vc66glm/files/output.log
+2022-07-06 15:21:28,782 INFO    MainThread:34727 [internal.py:handle_exit():80] Internal process exited

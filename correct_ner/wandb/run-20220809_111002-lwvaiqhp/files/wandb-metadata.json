@@ -1,0 +1,32 @@
+{
+    "os": "macOS-12.4-arm64-arm-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-08-09T09:10:03.695571",
+    "startedAt": "2022-08-09T09:10:02.030467",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "train",
+        "configs/config.cfg",
+        "--output",
+        "training/",
+        "--paths.train",
+        "corpus/train_corrected.spacy",
+        "--paths.dev",
+        "corpus/dev_corrected.spacy",
+        "--code",
+        "scripts/functions.py"
+    ],
+    "state": "running",
+    "program": "-m spacy.__main__",
+    "git": {
+        "remote": "https://github.com/AnisHdd/math_ner.git",
+        "commit": "5ee878a6da0b026223ed128aca360cd80c721a50"
+    },
+    "email": "anisahdd@gmail.com",
+    "root": "/Users/anis/test_labnbook/math_ner",
+    "host": "salsa-27-98.priv.enst-bretagne.fr",
+    "username": "root",
+    "executable": "/Users/anis/miniforge3/bin/python"
+}
