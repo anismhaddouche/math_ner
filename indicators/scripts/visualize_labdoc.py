@@ -4,7 +4,6 @@
 
 import sys,os
 import spacy
-# import typer 
 sys.path.append((os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 + '/model/fr_LabnbookNer-0.0.0'))
 from components import *
@@ -160,6 +159,11 @@ def visualize_labdoc(id_mission: int, id_report: int, id_labdoc: int, nlp =nlp )
         fuzzified = pd.read_csv("tmp/summary_fuzzy.csv", index_col=0)
         fuzzified_mission = fuzzified[fuzzified["id_mission"] == id_mission]
 
+        # st.text(fuzzified)
+        # st.text(fuzzified_mission)
+
+
+
         fig = plt.figure(figsize=(10, 4))
         sns.scatterplot(
                 data=fuzzified_mission,
@@ -196,12 +200,12 @@ def random_labdoc():
     id_mission =  st.text_input("id_mission")
     id_report = st.text_input("id_report")
     id_labdoc = st.text_input("id_labdoc")
-    st.text(f"id_labdoc : {id_labdoc}, id_report : {id_report}, id_mission : {id_mission}")
-    if st.button('Generate a random labdoc'):
+    #st.text(f"id_labdoc : {id_labdoc}, id_report : {id_report}, id_mission : {id_mission}")
+    if st.button('Extract a random labdoc'):
         data = pd.read_csv('/Users/anis/test_labnbook/math_ner/indicators/tmp/summary.csv')[['id_mission', 'id_report','id_labdoc']]
         random_row = data.sample(n=1)
         id_mission, id_report, id_labdoc = random_row['id_mission'].values[0], random_row['id_report'].values[0], random_row['id_labdoc'].values[0]
-        st.text(f"id_labdoc: {id_labdoc}, id_report: {id_report}, id_mission: {id_mission}")
+        #st.text(f"id_labdoc: {id_labdoc}, id_report: {id_report}, id_mission: {id_mission}")
 
         
        
@@ -209,13 +213,12 @@ def random_labdoc():
         visualize_labdoc(id_mission, id_report, id_labdoc, nlp = nlp)
     #print the exception error     
     except :
-        st.text("Error : id_labdoc not found")
+        #st.text("Error : id_labdoc not found")
         pass
 
 random_labdoc()
 
 # try:
-#     # visualize_labdoc(1038, 24870, 247575 )
 #     visualize_labdoc(1694,	47242,	471527)
 #     # visualize_labdoc(429, 43158, 435623)
 #     # visualize_labdoc(1544, 43471, 424607)

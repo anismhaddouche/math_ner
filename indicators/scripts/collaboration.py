@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@authors: Anne, Karim, Guillaume, Sébastien
-"""
+
 
 import json
 import gzip
@@ -28,6 +24,7 @@ def compute_coec_index(collab_matrix_segments,segments,users):
     else : 
         if 'ens' in users : 
             collab_teacher_segments = collab_matrix_segments[-1] # last line is the teacher's contribution
+            collab_matrix_segments = collab_matrix_segments[:-1]
             ratio = 1 - np.mean(collab_teacher_segments)
             nb_users -= 1
             if nb_users == 1:
@@ -61,7 +58,7 @@ def compute_eqc_index(collab_matrix,users,segments = None):
     else : 
         if 'ens' in users : 
             collab_teacher = collab_matrix[-1] # last line is the teacher's contribution
-            # collab_matrix = collab_matrix[:-1] # remove the teacher's contribution
+            collab_matrix = collab_matrix[:-1] # remove the teacher's contribution
             ratio = 1 - np.mean(collab_teacher)
             nb_users -= 1
             if nb_users == 1:
@@ -72,7 +69,7 @@ def compute_eqc_index(collab_matrix,users,segments = None):
                 return  0
      
         collab_users = np.round(np.mean(collab_matrix,axis = 1),2)
-        eqc_index = ratio *(np.round(1 - np.sqrt(((nb_users / (nb_users- 1)) * sum((collab_users - (1/nb_users))**2))),2))
+        eqc_index = ratio*(np.round(1 - np.sqrt(((nb_users / (nb_users- 1)) * sum((collab_users - (1/nb_users))**2))),2))
 
     return eqc_index
 

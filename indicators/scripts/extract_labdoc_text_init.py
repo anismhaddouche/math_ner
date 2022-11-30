@@ -1,6 +1,4 @@
-"""
-@authors: Anne, Karim, Guillaume, Sébastien, Anis
-"""
+
 import mysql.connector as mariadb
 import json
 import gzip

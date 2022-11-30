@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@authors: Anne, Karim, Guillaume, Sébastien, Anis
-"""
 
 import json
 import gzip
@@ -15,10 +10,10 @@ import sys, os
 
 sys.path.append((os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 + '/model/fr_LabnbookNer-0.0.0'))
+
 from components import *
 
 nlp = spacy.load("model/fr_LabnbookNer-0.0.0")
-
 
 
 def get_meta(doc):
