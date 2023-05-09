@@ -1,6 +1,6 @@
 <!-- SPACY PROJECT: AUTO-GENERATED DOCS START (do not remove) -->
 
-# 🪐 spaCy Project: Compute the indicators for each Labdoc version
+# 🪐 spaCy Project: Compute two indicators for each Labdoc version
 
 ## 📋 project.yml
 
